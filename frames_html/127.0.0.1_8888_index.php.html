@@ -1,0 +1,162 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<title>Netgear</title>
+<script type="text/javascript" src="include/scripts/prototype.js?code=7863254"></script>
+<script type="text/javascript" src="include/scripts/control-modal.js?code=7863254"></script>
+<script type="text/javascript" src="config.php?json=true&amp;code=6153137"></script>
+<script type="text/javascript" src="productregistration/Prod_Reg_Popup.js?code=7863254"></script>
+<link rel="stylesheet" href="include/css/layout.css?code=7863254" type="text/css">
+<link rel="stylesheet" href="include/css/style.css?code=7863254" type="text/css">
+<link rel="stylesheet" href="include/css/default.css?code=7863254" type="text/css">
+<link rel="stylesheet" href="include/css/fonts.css?code=7863254" type="text/css">
+<link rel="stylesheet" href="productregistration/Prod_Reg_Popup.css?code=7863254">
+</head>
+<body style="background-color: #FFFFFF; margin: 0px; padding: 0px;" marginheight="0">
+<script language="javascript">
+<!--
+
+var progressBar = new ModalWindow(false, {
+			contents: function() { return "<img src='images/loading.gif'>"; },
+			overlayCloseOnClick: true,
+			overlayClassName: 'ProgressBar_overlay',
+			containerClassName: 'ProgressBar_container',
+			opacity: 100,
+			iframe: true
+		});
+progressBar.open();
+function fnTrapKD(event){
+    if (document.all){
+        if (window.event.keyCode == 13){
+            doSubmitAction(window.event);
+        }
+    }
+    else if (document.getElementById){
+        if (event.which == 13){
+            doSubmitAction(event);
+        }
+    }
+    else if(document.layers){
+        if(event.which == 13){
+            doSubmitAction(event);
+        }
+    }
+}
+function doSubmitAction(event)
+{
+    if (window.event && window.event.cancelBubble && window.event.returnValue){
+        window.event.cancelBubble = true;
+        window.event.returnValue = false;
+    }
+    if (event && event.stopPropagation && event.preventDefault){
+        event.stopPropagation();
+        event.preventDefault();
+    }
+    if (window.top.frames.header.loginPage == undefined) {
+     //   window.top.frames['master'].doSubmit(window.top.frames['action'].$('applyButton'),'apply',window.top.frames['action']._isChanged);
+    }
+    else {
+        window.top.frames['master'].doLogin(event);
+    }
+}
+document.body.onkeypress=function(event){
+	fnTrapKD(event);
+}
+
+-->
+</script><div id="modal_overlay" class="ProgressBar_overlay" style="position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 9998; opacity: 100;"></div><div id="modal_container" class="ProgressBar_container" style="z-index: 9999; position: absolute; top: 868px; left: 914px;"><img src="images/loading.gif"></div><div id="modal_loading" style="display: none;"></div>
+<script type="text/javascript" src="include/scripts/browser-ext.js?code=7863254"></script>
+<script type="text/javascript" src="include/scripts/effects.js?code=7863254"></script>
+<script type="text/javascript" src="include/scripts/common.js?code=7863254"></script>
+<script type="text/javascript" src="include/scripts/wirelessnew.js?code=7863254"></script>
+<script type="text/javascript" src="include/scripts/TableSort.js?code=7863254"></script>
+<script type="text/javascript" src="include/scripts/ipv6.js?code=7863254"></script>
+<script type="text/javascript" src="include/scripts/livevalidation.js?code=7863254"></script>
+<script type="text/javascript" src="include/scripts/prototype-ext.js?code=7863254"></script>
+<script type="text/javascript" src="include/scripts/validation.js?code=7863254"></script>
+	<form name="dataForm" id="dataForm" enctype="multipart/form-data" action="index.php?page=master" method="post">
+	<input type="hidden" id="loading" value="true">
+	<input type="hidden" name="menu1" id="menu1" value="Login">
+	<input type="hidden" name="menu2" id="menu2" value="">
+	<input type="hidden" name="menu3" id="menu3" value="">
+	<input type="hidden" name="menu4" id="menu4" value="">
+	<input type="hidden" name="mode7" id="mode7" value="">
+	<input type="hidden" name="mode8" id="mode8" value="">
+	<input type="hidden" name="mode9" id="mode9" value="">
+	<input type="hidden" name="Action" id="Action" value="">
+	<input type="hidden" id="logout">
+	<input type="hidden" id="helpURL" value="Login">
+	<div id="bodyblock" align="center" style="background-color: #FFFFFF;">
+		<table align="center">
+			<tbody><tr>
+				<td class="font15Bold">&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="spacerHeight9" style="text-align: center;" align="center">
+					<table id="errorMessageBlock" align="center" style="margin: 4px auto 10px auto; display: none;">
+						<tbody><tr>
+							<td style="padding: 5px; vertical-align: top;"><img src="images/alert.gif" style="border: 0px; padding: 0px; margin: 0px;"></td>
+							<td style="padding: 5px 5px 5px 0px; vertical-align: middle;"><b id="br_head">Please address the fields highlighted!</b></td>
+						</tr>
+						<tr>
+							<td style="padding: 0px; vertical-align: top;"></td>
+							<td style="padding: 0px 5px 5px 0px; text-align: left;"></td>
+						</tr>
+					</tbody></table>
+				</td>
+			</tr>
+						<script language="javascript">
+<!--
+
+	if (window.top.frames.header.loginPage == undefined)
+	{
+		window.top.location.href = "index.php";
+	}
+
+-->
+</script>
+	<tr>
+		<td>
+			<table class="tableStyle" height="100%">
+				<tbody><tr>
+					<td class="" style="width: 8px;"><img src="images/clear.gif" width="8"></td>
+					<td class="spacer100Percent topAlign" style="text-align: center;"><table class="loginBox">
+				<tbody><tr>
+					<td colspan="3"><table class="tableStyle"><tbody><tr><td colspan="2" class="subSectionTabTopLeft spacer80Percent font12BoldBlue" align="left">Login</td><td class="subSectionTabTopRight spacer20Percent"><a href="javascript: void(0);" onclick="showHelp('Login','login');"><img src="images/help_icon.gif" width="12" height="12" title="Click for help"></a></td></tr><tr><td colspan="3" class="subSectionTabTopShadow"></td></tr></tbody></table></td>
+				</tr>
+				<tr>
+					<td class="subSectionBodyDot">&nbsp;</td>
+					<td class="spacer100Percent paddingsubSectionBodyLogin">
+						<table class="padding5Top tableStyle">
+							<tbody><tr>
+								<td class="font10Bold spacer25Percent" align="left">Username</td>
+								<td class="spacer55Percent" align="left"><input type="text" class="input" name="username" id="username" maxlength="48" label="User Name" validate="Presence, { onlyOnSubmit: true }"></td>
+							</tr>
+							<tr>
+								<td class="font10Bold padding4Top" align="left">Password</td>
+								<td class="padding4Top" align="left"><input type="password" class="input" name="password" id="password" maxlength="64" label="Password" validate="Presence, { onlyOnSubmit: true }"></td>
+							</tr>
+							<tr>
+								<td colspan="2" class="padding5TopBottom10Right"><input type="image" onclick="doLogin(event);" src="images/login_on.gif" title="Login" border="0px;"><input type="hidden" name="login" id="login" value=""></td>
+							</tr>
+						</tbody></table>
+					</td>
+					<td class="subSectionBodyDotRight">&nbsp;</td>
+				</tr>
+				<tr>
+					<td colspan="3" class="subSectionBottom"></td>
+				</tr>
+			</tbody></table>
+		</td>
+	</tr>
+<script language="javascript">
+<!--
+$('username').focus();
+-->
+</script>
+		</tbody></table>
+	
+
+<!--@@@PRODUCTREGISTRATIONSTART@@@-->
+
+<!--@@@PRODUCTREGISTRATIONEND@@@-->
+
+</td></tr></tbody></table></div></form></body></html>
