@@ -1,11 +1,9 @@
-#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-discover_endpoints_fixed_all.py
 
 Selenium を使って、JavaScript 実行後の全フレームを巡回し、
 各フレームが最終的に読み込んでいる URL（エンドポイント）を取得し、
-すべてのフレームの HTML を保存するスクリプトです。
+すべてのフレームの HTML を保存するスクリプト
 """
 
 import os
