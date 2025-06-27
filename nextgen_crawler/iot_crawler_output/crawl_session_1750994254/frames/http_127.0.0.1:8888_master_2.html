@@ -1,0 +1,358 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<title>Netgear</title>
+<script type="text/javascript" src="include/scripts/prototype.js?code=4823127"></script>
+<script type="text/javascript" src="include/scripts/control-modal.js?code=4823127"></script>
+<script type="text/javascript" src="config.php?json=true&amp;code=6153137"></script>
+<script type="text/javascript" src="productregistration/Prod_Reg_Popup.js?code=4823127"></script>
+<link rel="stylesheet" href="include/css/layout.css?code=4823127" type="text/css">
+<link rel="stylesheet" href="include/css/style.css?code=4823127" type="text/css">
+<link rel="stylesheet" href="include/css/default.css?code=4823127" type="text/css">
+<link rel="stylesheet" href="include/css/fonts.css?code=4823127" type="text/css">
+<link rel="stylesheet" href="productregistration/Prod_Reg_Popup.css?code=4823127">
+</head>
+<body style="background-color: #FFFFFF; margin: 0px; padding: 0px;" marginheight="0">
+<script language="javascript">
+<!--
+
+var progressBar = new ModalWindow(false, {
+			contents: function() { return "<img src='images/loading.gif'>"; },
+			overlayCloseOnClick: true,
+			overlayClassName: 'ProgressBar_overlay',
+			containerClassName: 'ProgressBar_container',
+			opacity: 100,
+			iframe: true
+		});
+progressBar.open();
+function fnTrapKD(event){
+    if (document.all){
+        if (window.event.keyCode == 13){
+            doSubmitAction(window.event);
+        }
+    }
+    else if (document.getElementById){
+        if (event.which == 13){
+            doSubmitAction(event);
+        }
+    }
+    else if(document.layers){
+        if(event.which == 13){
+            doSubmitAction(event);
+        }
+    }
+}
+function doSubmitAction(event)
+{
+    if (window.event && window.event.cancelBubble && window.event.returnValue){
+        window.event.cancelBubble = true;
+        window.event.returnValue = false;
+    }
+    if (event && event.stopPropagation && event.preventDefault){
+        event.stopPropagation();
+        event.preventDefault();
+    }
+    if (window.top.frames.header.loginPage == undefined) {
+     //   window.top.frames['master'].doSubmit(window.top.frames['action'].$('applyButton'),'apply',window.top.frames['action']._isChanged);
+    }
+    else {
+        window.top.frames['master'].doLogin(event);
+    }
+}
+document.body.onkeypress=function(event){
+	fnTrapKD(event);
+}
+
+-->
+</script><div id="modal_overlay" class="" style="position: fixed; top: 0px; left: 0px; width: 100%; height: 100%; z-index: 9998; opacity: 100; display: none;"></div><div id="modal_container" class="" style="z-index: 9999; position: absolute; display: none;"></div><div id="modal_loading" style="display: none;"></div>
+<script type="text/javascript" src="include/scripts/browser-ext.js?code=4823127"></script>
+<script type="text/javascript" src="include/scripts/effects.js?code=4823127"></script>
+<script type="text/javascript" src="include/scripts/common.js?code=4823127"></script>
+<script type="text/javascript" src="include/scripts/wirelessnew.js?code=4823127"></script>
+<script type="text/javascript" src="include/scripts/TableSort.js?code=4823127"></script>
+<script type="text/javascript" src="include/scripts/ipv6.js?code=4823127"></script>
+<script type="text/javascript" src="include/scripts/livevalidation.js?code=4823127"></script>
+<script type="text/javascript" src="include/scripts/prototype-ext.js?code=4823127"></script>
+<script type="text/javascript" src="include/scripts/validation.js?code=4823127"></script>
+	<form name="dataForm" id="dataForm" enctype="multipart/form-data" action="index.php?page=master" method="post">
+	<input type="hidden" id="loading" value="true">
+	<input type="hidden" name="menu1" id="menu1" value="Configuration">
+	<input type="hidden" name="menu2" id="menu2" value="System">
+	<input type="hidden" name="menu3" id="menu3" value="General">
+	<input type="hidden" name="menu4" id="menu4" value="General">
+	<input type="hidden" name="mode7" id="mode7" value="">
+	<input type="hidden" name="mode8" id="mode8" value="">
+	<input type="hidden" name="mode9" id="mode9" value="">
+	<input type="hidden" name="Action" id="Action" value="">
+	<input type="hidden" id="logout">
+	<input type="hidden" id="helpURL" value="General">
+    
+    <script type="text/javascript">
+    <!--
+    ['refresh','edit','save','details'].each(function(buttonId) {
+        if (window.top.frames['action'].$(buttonId) != undefined) {
+            window.top.frames['action'].$(buttonId).disabled = true;
+            window.top.frames['action'].$(buttonId).src = window.top.frames['action'].$(buttonId).src.replace('_on.gif','_off.gif');
+        }
+    });
+    -->
+    </script>
+    
+	<div id="bodyblock" style="background-color: #FFFFFF;">
+		<table id="bodyContainer">
+			<tbody><tr>
+				<td class="font15Bold">General&nbsp;</td>
+			</tr>
+			<tr>
+				<td class="spacerHeight9" style="text-align: center;" align="center">
+					<table id="errorMessageBlock" align="center" style="margin: 4px auto 10px auto; ">
+						<tbody><tr>
+							<td style="padding: 5px; vertical-align: top;"><img src="images/alert.gif" style="border: 0px; padding: 0px; margin: 0px;"></td>
+							<td style="padding: 5px 5px 5px 0px; vertical-align: middle;"><b id="br_head">Wireless Radio is turned off!</b></td>
+						</tr>
+						<tr>
+							<td style="padding: 0px; vertical-align: top;"></td>
+							<td style="padding: 0px 5px 5px 0px; text-align: left;"></td>
+						</tr>
+					</tbody></table>
+				</td>
+			</tr>
+						
+
+
+<script language="javascript">
+
+//Method to hide/show the link that redirects to the Cloud server page.
+
+function hideLink(flag){
+
+	if(document.getElementById('cloudLink')){
+
+		if(flag==0)
+
+			document.getElementById('cloudLink').style.display = "none";
+
+		else
+
+			document.getElementById('cloudLink').style.display = "block";
+
+	}
+
+}
+
+</script>
+
+
+
+	<tr>
+
+		<td>	
+
+			<table class="tableStyle">
+
+				<tbody><tr>
+
+					<!-- Table header: Cloud Settings -->
+
+					<td colspan="3"><script>tbhdr('Business Central Settings','CloudSettings')</script><table class="tableStyle"><tbody><tr><td colspan="2" class="subSectionTabTopLeft spacer80Percent font12BoldBlue">Business Central Settings</td><td class="subSectionTabTopRight spacer20Percent"><a href="javascript: void(0);" onclick="showHelp('Business Central Settings','CloudSettings');"><img src="../images/help_icon.gif" width="12" height="12" title="Click for help"></a></td></tr><tr><td colspan="3" class="subSectionTabTopShadow"></td></tr></tbody></table></td>
+
+				</tr>
+
+				<tr>
+
+					<td class="subSectionBodyDot">&nbsp;</td>
+
+					<td class="spacer100Percent paddingsubSectionBody">
+
+						<table class="tableStyle">
+
+							<!-- Radio Button to Enable and Disable the Cloud Mode -->
+
+							<!--							<tr  >
+				<td class="DatablockLabel" >Cloud Status</td>
+				<td class="DatablockContent"><input type='text'  name="system['basicSettings']['cloudStatus']" id="enableCloud" class="input input" disabled label="Cloud Status" onkeydown="setActiveContent();" value="DISCONNECTED"></td>
+			</tr>-->
+
+							<!--<tr  >
+				<td class="DatablockLabel" >Cloud Status</td>
+				<td class="DatablockContent"><table class="tableStyle" cellspacing="0" cellpadding="0"><tr><td class="spacer5Percent" style="padding: 0px;"><input type='radio' name="system['basicSettings']['cloudStatus']" id="enableCloud" disabled label="Cloud Status" onclick="setActiveContent();grayOutForCloud(this);hideLink(this.value);" value="1" checked = 'checked'></td><td class="spacer20Percent" style="padding: 0px; padding-right: 14px;">Enable</td><td class="spacer5Percent" style="padding: 0px;"><input type='radio' name="system['basicSettings']['cloudStatus']" id="enableCloud" disabled label="Cloud Status" onclick="setActiveContent();grayOutForCloud(this);hideLink(this.value);" value="0"></td><td class="spacer80Percent" style="padding: 0px; padding-right: 14px;">Disable</td></tr></table></td>
+			</tr>
+							<input type='hidden'  name="hiddenCloud" id="hiddenCloud" class=" input" label="&nbsp;" onkeydown="setActiveContent();" value="1">
+							<tr  >
+				<td class="DatablockLabel" >Business Central Mode</td>
+				<td class="DatablockContent"><table class="tableStyle" cellspacing="0" cellpadding="0"><tr><td class="spacer5Percent" style="padding: 0px;"><input type='radio' name="system['basicSettings']['cloudStatus']" id="enableMode" label="Business Central Mode" onclick="setActiveContent();" value="1" checked = 'checked'></td><td class="spacer20Percent" style="padding: 0px; padding-right: 14px;">Enable</td><td class="spacer5Percent" style="padding: 0px;"><input type='radio' name="system['basicSettings']['cloudStatus']" id="enableMode" label="Business Central Mode" onclick="setActiveContent();" value="0"></td><td class="spacer80Percent" style="padding: 0px; padding-right: 14px;">Disable</td></tr></table></td>
+			</tr> -->
+							<tbody><tr>
+				<td class="DatablockLabel">Business Central Enabled</td>
+				<td class="DatablockContent"><table class="tableStyle" cellspacing="0" cellpadding="0"><tbody><tr><td class="spacer5Percent" style="padding: 0px;"><input type="radio" name="system['basicSettings']['cloudStatus']" id="enableMode" label="Business Central Enabled" onclick="setActiveContent();updateCloudStatus(this.value);" value="1" checked="checked"></td><td class="spacer20Percent" style="padding: 0px; padding-right: 14px;">Yes</td><td class="spacer5Percent" style="padding: 0px;"><input type="radio" name="system['basicSettings']['cloudStatus']" id="enableMode" label="Business Central Enabled" onclick="setActiveContent();updateCloudStatus(this.value);" value="0"></td><td class="spacer80Percent" style="padding: 0px; padding-right: 14px;">No</td></tr></tbody></table></td>
+			</tr>							<input type="hidden" name="enableMode1" id="enableMode1" class=" input" label="&nbsp;" onkeydown="setActiveContent();" value="1">							
+							<!--------VVDN CODE START --------->
+							<input type="hidden" name="hidden_cloudStatus" id="hidden_cloudStatus" class=" input" label="&nbsp;" onkeydown="setActiveContent();">							<input type="hidden" name="hiddenAP_StandaloneMode" id="hiddenAP_StandaloneMode" class=" input" label="&nbsp;" onkeydown="setActiveContent();">														<input type="hidden" name="serno" id="serno" class=" input" label="&nbsp;" onkeydown="setActiveContent();" value="���������������������������������������������������������������������������������������������������������">							<!--------VVDN CODE ENDS -------->
+							
+																					<tr>
+				<td class="DatablockLabel">Business Central Activation Status</td>
+				<td class="DatablockContent"><input type="text" name="system['basicSettings']['cloudConnectivityStatus']" id="enableCloud" class="input input" disabled="" label="Business Central Activation Status" onkeydown="setActiveContent();" value="Pending"></td>
+			</tr> 
+																					<tr>
+				<td class="DatablockLabel">Business Central Connectivity Status</td>
+				<td class="DatablockContent"><input type="text" name="connStatus" id="connStatus" class=" input" disabled="" label="Business Central Connectivity Status" onkeydown="setActiveContent();" value="Disconnected"></td>
+			</tr>																					<tr>          <td class="spacerHeight21"></td>      </tr>
+										<tr><td id="cloudLink" class="font10Bold padding4Top" style="text-align: left;"><a href="https://bc.netgear.com" target="_blank">Click here to open Business Central Management</a></td>
+
+						 </tr><tr>          <td class="spacerHeight12"></td>      </tr> </tbody></table>      <table class="tableStyle">               <tbody><tr>                  <td>                          <textarea name="activewin" draggable="false" id="activewin" class="smallfix2" cols="60" style="resize: none;font-size:11px;" rows="4" wrap="on" readonly="readonly">NOTE: If Business Central Enabled is set to Yes, this Access Point will periodically attempt to contact NETGEAR Business Central Wireless Server to check if this Access Point has been registered for Business Central management.</textarea> 
+						 </td>
+						 </tr> 
+						 
+						 </tbody></table>
+						 </td>
+				<td class="subSectionBodyDotRight">&nbsp;</td>
+				</tr>
+
+				<tr>
+
+					<td colspan="3" class="subSectionBottom">&nbsp;</td>
+
+				</tr>
+
+			</tbody></table>
+
+		</td>
+
+	</tr>
+	<tr>
+		<td class="spacerHeight21"></td>
+	</tr>
+
+	
+	<tr>
+		<td>
+			<table class="tableStyle">
+				<tbody><tr>
+					<td colspan="3"><script>tbhdr('Access Point Information','accessPointInformation')</script><table class="tableStyle"><tbody><tr><td colspan="2" class="subSectionTabTopLeft spacer80Percent font12BoldBlue">Access Point Information</td><td class="subSectionTabTopRight spacer20Percent"><a href="javascript: void(0);" onclick="showHelp('Access Point Information','accessPointInformation');"><img src="../images/help_icon.gif" width="12" height="12" title="Click for help"></a></td></tr><tr><td colspan="3" class="subSectionTabTopShadow"></td></tr></tbody></table></td>
+				</tr>
+				<tr>
+					<td class="subSectionBodyDot">&nbsp;</td>
+					<td class="spacer100Percent paddingsubSectionBody">
+						<table class="tableStyle">
+							<tbody><tr>
+								<td class="DatablockLabel">Access Point Name</td>
+								<td class="DatablockContent">netgear123456</td>
+							</tr>
+							<tr>
+								<td class="DatablockLabel">Ethernet MAC Address</td>
+								<td class="DatablockContent">52:54:00:12:34:56</td>
+							</tr>
+														<tr>
+								<td class="DatablockLabel">Wireless MAC Address</td>
+                                <!--@@@FIVEGHZSTART@@@-->
+                                <!--@@@FIVEGHZEND@@@-->
+							</tr>
+<!--@@@DUAL_CONCURRENTSTART@@@-->
+																												<tr>
+								<td class="DatablockLabel">Country / Region</td>
+								<td class="DatablockContent">United States</td>
+							</tr>
+							<tr>
+								<td class="DatablockLabel">Firmware Version</td>
+								<td class="DatablockContent">3.7.11.4</td>
+							</tr>
+							<tr>
+                              <td class="DatablockLabel">Serial Number</td>
+							  <td class="DatablockContent">
+							  							  </td>
+                            </tr>
+							<tr>
+								<td class="DatablockLabel">Current Time</td>
+								<td class="DatablockContent">Wed Mar  5 15:38:02 UTC 2025
+</td>
+							</tr>
+						</tbody></table>
+					</td>
+					<td class="subSectionBodyDotRight">&nbsp;</td>
+				</tr>
+				<tr>
+					<td colspan="3" class="subSectionBottom">&nbsp;</td>
+				</tr>
+			</tbody></table>
+		</td>
+	</tr>
+		
+<script type="text/javascript">
+									<!--
+									
+									if(document.addEventListener){
+				
+document.addEventListener('DOMContentLoaded', function() {
+   cloudSta();
+});
+}else{
+document.attachEvent('onreadystatechange', function() {
+   cloudSta();
+});
+}
+
+																				
+										if(document.addEventListener){
+document.addEventListener('DOMContentLoaded', function() {
+   cloudUI();
+});
+}else{
+document.attachEvent('onreadystatechange', function() {
+   cloudUI();
+});
+}
+																				
+										if(document.addEventListener){
+document.addEventListener('DOMContentLoaded', function() {
+   cloudConnection();
+});
+}else{
+document.attachEvent('onreadystatechange', function() {
+   cloudConnection();
+});
+}
+																			-->
+									</script>
+		</tbody></table>
+	</div>
+</form>
+<!--@@@PRODUCTREGISTRATIONSTART@@@-->
+					<script type="text/javascript">
+                    
+					new Ajax.Request('/productregistration/fsock.php',
+						{
+						  method:'get',
+						  parameters: { id: Math.floor(Math.random()*10005) },    
+						  onSuccess: function(RegisterStat){
+						  var response = RegisterStat.responseText;
+						  if(response=='ok')
+                          fsockt()
+                                status=response
+						 //  ProductRegistration()
+						  //else if(response=='registered')
+						   //SerialRegistered()
+						},
+						onFailure: function(){ alert('Something went wrong...') }
+						});
+					                     function fsockt()
+                    {
+   					
+					new Ajax.Request('/productregistration/Prod_Reg_SerialCheck.php',
+						{
+						  method:'get',
+						  parameters: { id: Math.floor(Math.random()*10005) },    
+						  onSuccess: function(RegisterStat){
+						  var response = RegisterStat.responseText;   
+                           //if(Array['navigation']['1'] != 'Login')
+						  if(response=='notregistered')
+						 ProductRegistration()
+				            else if(response=='registered')
+		                  SerialRegistered()
+						},
+						onFailure: function(){ alert('Something went wrong...') }
+						});
+					         }
+        
+  					</script>
+					
+<!--@@@PRODUCTREGISTRATIONEND@@@-->
+
+</body></html>

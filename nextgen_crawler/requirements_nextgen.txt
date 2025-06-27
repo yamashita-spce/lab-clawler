@@ -1,0 +1,31 @@
+# Next-Gen IoT Crawler Dependencies
+
+# Core Web Automation
+selenium>=4.15.0
+webdriver-manager>=4.0.0
+
+# HTML Processing
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+
+# HTTP Client
+requests>=2.31.0
+
+# Data Processing
+dataclasses-json>=0.6.0
+
+# Configuration Management
+python-dotenv>=1.0.0
+pyyaml>=6.0
+
+# Cryptography & Hashing  
+hashlib2>=1.0.0
+
+# JSON Processing
+orjson>=3.9.0
+
+# Logging & Time
+python-dateutil>=2.8.0
+
+# Type Hints
+typing-extensions>=4.8.0
