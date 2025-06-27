@@ -1,0 +1,14 @@
+# Legacy Crawler Dependencies
+
+# HTTP Client
+requests>=2.28.0
+
+# Web Automation
+selenium>=4.0.0
+
+# HTML Processing
+beautifulsoup4>=4.11.0
+lxml>=4.8.0
+
+# Basic utilities for legacy crawlers
+urllib3>=1.26.0

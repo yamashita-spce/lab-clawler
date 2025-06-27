@@ -1,61 +1,161 @@
-# Firmfuzz クローラー改良版
-
-このレポジトリは、Firmfuzzのクローラーを改良したモデルの検証を目的としています。
+# IoTデバイス Webクローラープロジェクト
 
 ## プロジェクト概要
+IoTデバイス（特にルーター）のWebインターフェースを自動クローリングし、セキュリティ分析とFuzzing準備を行う統合システムです。
 
-本プロジェクトは、IoTデバイスのWebインターフェースを効率的に走査するためのクローラーを開発・検証します。特に、認証が必要なページやJavaScriptを多用するモダンなWebアプリケーションへの対応を目指します。
+## ディレクトリ構成
 
-## 使用方法
-
-### シンプルクローラー
-
-基本的なWebページ取得には `simple_crawler.py` を使用します。
-
-```bash
-python simple_crawler.py [対象URL]
+```
+lab-clawler/
+├── legacy_crawlers/           # 従来クローラー（v1.x系）
+│   ├── simple_crawler.py      # 基本HTTPクローラー
+│   ├── authentication_crawler.py  # 認証対応クローラー
+│   ├── new_web_get.py         # フレームエンドポイント探索
+│   ├── fix_webdriver.py       # WebDriver設定修正
+│   ├── requirements_legacy.txt # 従来クローラー依存関係
+│   ├── README_legacy.md       # 従来クローラー説明書
+│   ├── crawl_output/          # 従来クローラー出力
+│   └── frames_html/           # フレーム出力
+│
+├── nextgen_crawler/           # 次世代クローラー（v2.0）
+│   ├── iot_crawler/           # コアモジュール
+│   │   ├── config.py          # 設定管理
+│   │   ├── authentication.py  # 認証エンジン
+│   │   ├── page_crawler.py    # ページクローリング
+│   │   ├── session_manager.py # セッション管理
+│   │   ├── structure_analyzer.py # 構造分析
+│   │   ├── output_manager.py  # 出力管理
+│   │   └── main_crawler.py    # メインオーケストレーター
+│   ├── iot_crawler_cli.py     # CLIインターフェース
+│   ├── test_iot_crawler.py    # テストファイル
+│   ├── requirements_nextgen.txt # 次世代クローラー依存関係
+│   ├── README_nextgen.md      # 次世代クローラー説明書
+│   └── iot_crawler_output/    # 次世代クローラー出力
+│
+├── PROJECT_SPECIFICATION.md   # 英語版技術仕様書
+├── PROJECT_SPECIFICATION_JP.md # 日本語版技術仕様書
+├── CLAUDE.md                  # Claude Code用プロジェクト指示
+├── README.md                  # このファイル
+└── requirements.txt           # 全体依存関係（共通）
 ```
 
-例:
+## クローラー比較
+
+### 従来クローラー（Legacy Crawlers）
+- **特徴**: シンプル、軽量、単一ファイル構成
+- **対象**: 特定デバイス（主にNetgear）
+- **機能**: 基本的なHTMLクローリング
+- **用途**: 小規模・簡単なクローリング作業
+- **状況**: メンテナンスモード
+
+### 次世代クローラー（Next-Gen Crawler）
+- **特徴**: モジュラー、包括的、高機能
+- **対象**: 汎用IoTデバイス（ルーター中心）
+- **機能**: セキュリティ分析、Fuzzing準備、セッション管理
+- **用途**: 本格的なセキュリティテスト準備
+- **状況**: アクティブ開発・推奨
+
+## クイックスタート
+
+### 環境構築
 ```bash
-python simple_crawler.py http://localhost:8888/
+# プロジェクトクローン
+git clone <repository-url>
+cd lab-clawler
+
+# 従来クローラー使用の場合
+cd legacy_crawlers
+pip install -r requirements_legacy.txt
+
+# 次世代クローラー使用の場合（推奨）
+cd nextgen_crawler  
+pip install -r requirements_nextgen.txt
 ```
 
-### 認証クローラー
+### 基本使用法
 
-認証が必要なページやフレームセットを含むページには `authentication_crawler.py` を使用します。このスクリプトは、指定されたURLのページとフレームセット内のフレームのHTMLを取得・保存します。認証機能は現在開発中です。
-
+#### 従来クローラー
 ```bash
-python authentication_crawler.py [対象URL]
+cd legacy_crawlers
+
+# 基本クローリング
+python authentication_crawler.py http://192.168.1.1
+
+# ログイン付きクローリング
+python authentication_crawler.py http://192.168.1.1 --login --username admin --password password
 ```
 
-例:
+#### 次世代クローラー（推奨）
 ```bash
-python authentication_crawler.py http://localhost:8888/
+cd nextgen_crawler
+
+# 基本クローリング
+python iot_crawler_cli.py crawl --url http://192.168.1.1 --user admin --pass password
+
+# 詳細分析付きクローリング
+python iot_crawler_cli.py --verbose crawl --url http://127.0.0.1:8888 --user admin --pass password
 ```
 
-## 環境構築
+## テスト環境
+```bash
+# テスト用IoTエミュレーター（Netgear）
+http://127.0.0.1:8888
 
-本プロジェクトを実行するには、以下の手順で環境を構築してください。
+# デフォルト認証情報
+Username: admin
+Password: password
+```
 
-1. **Pythonのインストール**
-   Python 3.8以上のバージョンが必要です。公式サイトからダウンロード・インストールしてください。
+## 出力データ
 
-2. **依存ライブラリのインストール**
-   以下のコマンドを実行し、必要なライブラリをインストールします。
+### 従来クローラー出力
+- `crawl_output/` - HTMLファイル
+- `frames_html/` - フレームファイル
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+### 次世代クローラー出力
+- `iot_crawler_output/html/` - 生HTMLページ
+- `iot_crawler_output/frames/` - フレームコンテンツ
+- `iot_crawler_output/json/` - 構造化データ
+- `iot_crawler_output/analysis/` - セキュリティ分析
+- `iot_crawler_output/fuzzing/` - Fuzzing準備データ
+- `iot_crawler_output/sessions/` - セッション再現データ
+- `iot_crawler_output/logs/` - 実行ログ
 
-3. **ChromeDriverのインストール**
-   Seleniumを使用するため、ChromeDriverが必要です。お使いのChromeブラウザのバージョンに合ったChromeDriverをダウンロードし、システムのPATHが通っている場所に配置してください。
+## 環境変数
 
-## 今後の開発予定
+```bash
+# 次世代クローラー設定例
+export IOT_CRAWLER_TARGET_URL="http://192.168.1.1"
+export IOT_CRAWLER_USERNAME="admin"
+export IOT_CRAWLER_PASSWORD="password"
+export IOT_CRAWLER_PAGE_TIMEOUT="60"
+export IOT_CRAWLER_OUTPUT_DIR="./iot_crawler_output"
+export IOT_CRAWLER_HEADLESS="true"
+```
 
-- 認証機能の強化
-- JavaScriptフレームワークへの対応
-- プロキシ連携によるネットワークトラフィック監視
-- DOM構造解析と類似度判定
-- フォーム入力と送信処理
-- レポート生成機能
+## 対応デバイス
+
+### 確認済み対応
+- Netgear ルーター （完全対応）
+- TP-Link ルーター （基本対応）
+- ASUS ルーター （基本対応）
+
+### 対応予定
+- Linksys ルーター
+- D-Link ルーター
+- IoTカメラ各種
+- スマートホーム機器
+
+## 開発履歴
+- **v1.0** - 初期実装（simple_crawler.py）
+- **v1.5** - 認証対応（authentication_crawler.py）
+- **v2.0** - 次世代システム（iot_crawler/）
+
+## ライセンス
+このプロジェクトは研究・教育目的で開発されています。
+対象システムへの使用前に適切な承認を取得してください。
+
+## サポート
+- **技術仕様**: PROJECT_SPECIFICATION_JP.md
+- **従来クローラー**: legacy_crawlers/README_legacy.md
+- **次世代クローラー**: nextgen_crawler/README_nextgen.md

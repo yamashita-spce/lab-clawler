@@ -1,0 +1,114 @@
+{
+  "session_info": {
+    "target_url": "http://127.0.0.1:8888",
+    "timestamp": 1750996009.357395,
+    "visible_mode": true,
+    "slow_mode": true,
+    "output_directory": "iot_crawler_output/crawl_session_1750996009",
+    "html_directory": "iot_crawler_output/crawl_session_1750996009/html",
+    "json_directory": "iot_crawler_output/crawl_session_1750996009/json"
+  },
+  "page_analysis": {
+    "url": "http://127.0.0.1:8888/index.php",
+    "title": "Netgear",
+    "frames": [
+      {
+        "name": "header",
+        "src": "http://127.0.0.1:8888/header.php"
+      },
+      {
+        "name": "thirdmenu",
+        "src": "http://127.0.0.1:8888/thirdMenu.html"
+      },
+      {
+        "name": "master",
+        "src": "http://127.0.0.1:8888/index.php"
+      },
+      {
+        "name": "dummyright",
+        "src": "http://127.0.0.1:8888/background.html"
+      },
+      {
+        "name": "action",
+        "src": "http://127.0.0.1:8888/button.html"
+      }
+    ],
+    "form_count": 0,
+    "link_count": 0,
+    "frame_details": [
+      {
+        "name": "header",
+        "title": "Netgear",
+        "forms": 1,
+        "inputs": 8
+      },
+      {
+        "name": "thirdmenu",
+        "title": "Netgear",
+        "forms": 0,
+        "inputs": 0
+      },
+      {
+        "name": "master",
+        "title": "Netgear",
+        "forms": 1,
+        "inputs": 20
+      },
+      {
+        "name": "dummyright",
+        "title": "Netgear",
+        "forms": 0,
+        "inputs": 0
+      },
+      {
+        "name": "action",
+        "title": "Netgear",
+        "forms": 0,
+        "inputs": 0
+      }
+    ],
+    "navigation": [],
+    "security": [
+      "CSRF protection: NOT DETECTED",
+      "Password fields: 0",
+      "Text input fields: 0",
+      "Session cookies: 1"
+    ]
+  },
+  "crawled_pages": [
+    {
+      "url": "http://127.0.0.1:8888/index.php",
+      "title": "Netgear",
+      "timestamp": 1750995982.896035,
+      "depth": 0
+    },
+    {
+      "url": "http://127.0.0.1:8888/header.php",
+      "title": "",
+      "timestamp": 1750995985.139627,
+      "depth": 1,
+      "source": "frame"
+    },
+    {
+      "url": "http://127.0.0.1:8888/thirdMenu.html",
+      "title": "",
+      "timestamp": 1750995989.2018838,
+      "depth": 1,
+      "source": "frame"
+    },
+    {
+      "url": "http://127.0.0.1:8888/background.html",
+      "title": "",
+      "timestamp": 1750995993.27883,
+      "depth": 1,
+      "source": "frame"
+    }
+  ],
+  "summary": {
+    "pages_crawled": 4,
+    "frames_analyzed": 5,
+    "forms_found": 0,
+    "links_found": 0,
+    "security_findings": 4
+  }
+}

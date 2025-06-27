@@ -1,0 +1,287 @@
+{
+  "metadata": {
+    "session_id": "cba62c60-1af1-4722-b75a-ab97d68d5675",
+    "timestamp": 1750994313,
+    "analysis_type": "structure_analysis",
+    "target_url": "http://127.0.0.1:8888"
+  },
+  "analysis": {
+    "summary": {
+      "total_urls": 2,
+      "total_dom_elements": 99,
+      "total_security_contexts": 2,
+      "endpoint_types": {
+        "unknown": 2
+      },
+      "security_issues": {
+        "potential_csrf_missing_token": 1
+      }
+    },
+    "url_structures": [
+      {
+        "url": "http://127.0.0.1:8888",
+        "endpoint_type": "unknown",
+        "is_api_endpoint": false,
+        "path_segments": [],
+        "query_params": {},
+        "file_extension": null
+      },
+      {
+        "url": "http://127.0.0.1:8888/header.php",
+        "endpoint_type": "unknown",
+        "is_api_endpoint": true,
+        "path_segments": [
+          "header.php"
+        ],
+        "query_params": {},
+        "file_extension": "php"
+      }
+    ],
+    "security_contexts": [
+      {
+        "url": "http://127.0.0.1:8888",
+        "authentication_required": false,
+        "csrf_tokens_count": 0,
+        "sensitive_parameters_count": 0,
+        "potential_vulnerabilities": []
+      },
+      {
+        "url": "http://127.0.0.1:8888/header.php",
+        "authentication_required": false,
+        "csrf_tokens_count": 0,
+        "sensitive_parameters_count": 0,
+        "potential_vulnerabilities": [
+          "potential_csrf_missing_token"
+        ]
+      }
+    ],
+    "fuzzing_preparation": {
+      "total_input_points": 0,
+      "total_parameters": 0,
+      "total_csrf_tokens": 0,
+      "api_endpoints": 1,
+      "config_endpoints": 0,
+      "action_endpoints": 0
+    },
+    "detailed_analysis": {
+      "http://127.0.0.1:8888": {
+        "url_structure": "URLStructure(url='http://127.0.0.1:8888', scheme='http', netloc='127.0.0.1:8888', path='', params='', query='', fragment='', path_segments=[], query_params={}, file_extension=None, is_api_endpoint=False, endpoint_type='unknown')",
+        "dom_elements": [
+          "DOMElement(tag='html', attributes={}, text_content='NetgearPlease use a browser that supports Frames!!!', xpath='/[document]/html', css_selector='[document] > html', parent_xpath='/[document]', children_count=6, depth=1, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='head', attributes={}, text_content='Netgear', xpath='/[document]/html/head', css_selector='[document] > html > head', parent_xpath='/[document]/html', children_count=7, depth=2, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='title', attributes={}, text_content='Netgear', xpath='/[document]/html/head/title', css_selector='[document] > html > head > title', parent_xpath='/[document]/html/head', children_count=1, depth=3, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='meta', attributes={'http-equiv': 'X-UA-Compatible', 'content': 'IE=8'}, text_content='', xpath='/[document]/html/head/meta', css_selector='[document] > html > head > meta', parent_xpath='/[document]/html/head', children_count=0, depth=3, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='script', attributes={'type': 'text/javascript'}, text_content=\"<!--\\n\\n\\n\\n    function setCols(colValue) {\\n\\n        if (document.getElementById('mainFrameset'))\\n\\n            document.getElementById('mainFrameset').cols = colValue;\\n\\n    }\\n\\n\\n\\n-->\", xpath='/[document]/html/head/script', css_selector='[document] > html > head > script', parent_xpath='/[document]/html/head', children_count=1, depth=3, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='frameset', attributes={'rows': '123px,*,66px', 'style': 'margin: 0px; padding: 0px;', 'framespacing': '0', 'border': '0'}, text_content='', xpath='/[document]/html/frameset', css_selector='[document] > html > frameset', parent_xpath='/[document]/html', children_count=7, depth=2, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='frame', attributes={'name': 'header', 'scrolling': 'no', 'noresize': '', 'frameborder': '0', 'marginheight': '0', 'border': '0', 'src': 'header.php'}, text_content='', xpath='/[document]/html/frameset/frame[1]', css_selector='[document] > html > frameset > frame', parent_xpath='/[document]/html/frameset', children_count=0, depth=3, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='frameset', attributes={'cols': '166px,*,11px', 'id': 'mainFrameset', 'style': 'margin: 0px; padding: 0px;', 'framespacing': '0', 'border': '0'}, text_content='', xpath='/[document]/html/frameset/frameset', css_selector='frameset#mainFrameset', parent_xpath='/[document]/html/frameset', children_count=7, depth=3, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='frame', attributes={'name': 'thirdmenu', 'scrolling': 'no', 'noresize': '', 'frameborder': '0', 'marginheight': '0', 'border': '0', 'src': 'thirdMenu.html'}, text_content='', xpath='/[document]/html/frameset/frameset/frame[1]', css_selector='frameset#mainFrameset > frame', parent_xpath='/[document]/html/frameset/frameset', children_count=0, depth=4, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='frame', attributes={'name': 'master', 'scrolling': 'auto', 'noresize': '', 'frameborder': '0', 'framespacing': '0', 'marginheight': '0', 'border': '0', 'src': ''}, text_content='', xpath='/[document]/html/frameset/frameset/frame[2]', css_selector='frameset#mainFrameset > frame', parent_xpath='/[document]/html/frameset/frameset', children_count=0, depth=4, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='frame', attributes={'name': 'dummyright', 'scrolling': 'no', 'noresize': '', 'frameborder': '0', 'marginheight': '0', 'border': '0', 'src': 'background.html'}, text_content='', xpath='/[document]/html/frameset/frameset/frame[3]', css_selector='frameset#mainFrameset > frame', parent_xpath='/[document]/html/frameset/frameset', children_count=0, depth=4, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='frame', attributes={'name': 'action', 'scrolling': 'no', 'noresize': '', 'frameborder': '0', 'marginheight': '0', 'border': '0', 'src': 'button.html'}, text_content='', xpath='/[document]/html/frameset/frame[2]', css_selector='[document] > html > frameset > frame', parent_xpath='/[document]/html/frameset', children_count=0, depth=3, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='noframes', attributes={}, text_content='Please use a browser that supports Frames!!!', xpath='/[document]/html/noframes', css_selector='[document] > html > noframes', parent_xpath='/[document]/html', children_count=3, depth=2, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='p', attributes={}, text_content='Please use a browser that supports Frames!!!', xpath='/[document]/html/noframes/p', css_selector='[document] > html > noframes > p', parent_xpath='/[document]/html/noframes', children_count=1, depth=3, is_interactive=False, security_relevant=False)"
+        ],
+        "security_context": "SecurityContext(url='http://127.0.0.1:8888', authentication_required=False, csrf_tokens=[], session_identifiers=[], sensitive_parameters=[], input_validation_points=[], potential_vulnerabilities=[])",
+        "fuzzing_data": {
+          "target_url": "http://127.0.0.1:8888",
+          "endpoint_type": "unknown",
+          "is_api_endpoint": false,
+          "input_points": [],
+          "parameters": {},
+          "csrf_tokens": [],
+          "session_requirements": [],
+          "validation_constraints": [],
+          "potential_attack_vectors": []
+        },
+        "analysis_timestamp": 1750994313.209833
+      },
+      "http://127.0.0.1:8888/header.php": {
+        "url_structure": "URLStructure(url='http://127.0.0.1:8888/header.php', scheme='http', netloc='127.0.0.1:8888', path='/header.php', params='', query='', fragment='', path_segments=['header.php'], query_params={}, file_extension='php', is_api_endpoint=True, endpoint_type='unknown')",
+        "dom_elements": [
+          "DOMElement(tag='html', attributes={'xmlns': 'http://www.w3.org/1999/xhtml'}, text_content='ConfigurationMonitoringMaintenanceSystem', xpath='/[document]/html', css_selector='[document] > html', parent_xpath='/[document]', children_count=3, depth=1, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='head', attributes={}, text_content='', xpath='/[document]/html/head', css_selector='[document] > html > head', parent_xpath='/[document]/html', children_count=23, depth=2, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='script', attributes={}, text_content='var _apmode = true;', xpath='/[document]/html/head/script[1]', css_selector='[document] > html > head > script', parent_xpath='/[document]/html/head', children_count=1, depth=3, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='script', attributes={'type': 'text/javascript', 'src': 'include/scripts/prototype.js?code=6153137'}, text_content='', xpath='/[document]/html/head/script[2]', css_selector='[document] > html > head > script', parent_xpath='/[document]/html/head', children_count=0, depth=3, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='script', attributes={'type': 'text/javascript', 'src': 'include/scripts/prototype-ext.js?code=6153137'}, text_content='', xpath='/[document]/html/head/script[3]', css_selector='[document] > html > head > script', parent_xpath='/[document]/html/head', children_count=0, depth=3, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='script', attributes={'type': 'text/javascript', 'src': 'include/scripts/browser-ext.js?code=6153137'}, text_content='', xpath='/[document]/html/head/script[4]', css_selector='[document] > html > head > script', parent_xpath='/[document]/html/head', children_count=0, depth=3, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='script', attributes={'type': 'text/javascript', 'src': 'config.php?json=true&code=6153137'}, text_content='', xpath='/[document]/html/head/script[5]', css_selector='[document] > html > head > script', parent_xpath='/[document]/html/head', children_count=0, depth=3, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='script', attributes={'type': 'text/javascript', 'src': 'include/scripts/common.js?code=6153137'}, text_content='', xpath='/[document]/html/head/script[6]', css_selector='[document] > html > head > script', parent_xpath='/[document]/html/head', children_count=0, depth=3, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='script', attributes={'type': 'text/javascript', 'src': 'include/scripts/menu.js?code=6153137'}, text_content='', xpath='/[document]/html/head/script[7]', css_selector='[document] > html > head > script', parent_xpath='/[document]/html/head', children_count=0, depth=3, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='link', attributes={'rel': ['stylesheet'], 'href': 'include/css/default.css?code=6153137', 'type': 'text/css'}, text_content='', xpath='/[document]/html/head/link[1]', css_selector='[document] > html > head > link', parent_xpath='/[document]/html/head', children_count=0, depth=3, is_interactive=True, security_relevant=False)",
+          "DOMElement(tag='link', attributes={'rel': ['stylesheet'], 'href': 'include/css/style.css?code=6153137', 'type': 'text/css'}, text_content='', xpath='/[document]/html/head/link[2]', css_selector='[document] > html > head > link', parent_xpath='/[document]/html/head', children_count=0, depth=3, is_interactive=True, security_relevant=False)",
+          "DOMElement(tag='link', attributes={'rel': ['stylesheet'], 'href': 'include/css/fonts.css?code=6153137', 'type': 'text/css'}, text_content='', xpath='/[document]/html/head/link[3]', css_selector='[document] > html > head > link', parent_xpath='/[document]/html/head', children_count=0, depth=3, is_interactive=True, security_relevant=False)",
+          "DOMElement(tag='link', attributes={'rel': ['stylesheet'], 'href': 'include/css/layout.css?code=6153137', 'type': 'text/css'}, text_content='', xpath='/[document]/html/head/link[4]', css_selector='[document] > html > head > link', parent_xpath='/[document]/html/head', children_count=0, depth=3, is_interactive=True, security_relevant=False)",
+          "DOMElement(tag='script', attributes={}, text_content='var _initiateMenu = true;', xpath='/[document]/html/head/script[8]', css_selector='[document] > html > head > script', parent_xpath='/[document]/html/head', children_count=1, depth=3, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='body', attributes={'style': 'background: #FFFFFF; margin: 0px;'}, text_content='ConfigurationMonitoringMaintenanceSystem', xpath='/[document]/html/body', css_selector='[document] > html > body', parent_xpath='/[document]/html', children_count=3, depth=2, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='form', attributes={'name': 'navForm', 'action': 'header.php', 'method': 'post'}, text_content='ConfigurationMonitoringMaintenanceSystem', xpath='/[document]/html/body/form', css_selector='[document] > html > body > form', parent_xpath='/[document]/html/body', children_count=21, depth=3, is_interactive=True, security_relevant=False)",
+          "DOMElement(tag='input', attributes={'type': 'hidden', 'name': 'menu1', 'id': 'menu1', 'value': 'Configuration'}, text_content='', xpath='/[document]/html/body/form/input[1]', css_selector='input#menu1', parent_xpath='/[document]/html/body/form', children_count=0, depth=4, is_interactive=True, security_relevant=False)",
+          "DOMElement(tag='input', attributes={'type': 'hidden', 'name': 'menu2', 'id': 'menu2', 'value': 'System'}, text_content='', xpath='/[document]/html/body/form/input[2]', css_selector='input#menu2', parent_xpath='/[document]/html/body/form', children_count=0, depth=4, is_interactive=True, security_relevant=False)",
+          "DOMElement(tag='input', attributes={'type': 'hidden', 'name': 'menu3', 'id': 'menu3', 'value': 'Basic'}, text_content='', xpath='/[document]/html/body/form/input[3]', css_selector='input#menu3', parent_xpath='/[document]/html/body/form', children_count=0, depth=4, is_interactive=True, security_relevant=False)",
+          "DOMElement(tag='input', attributes={'type': 'hidden', 'name': 'menu4', 'id': 'menu4', 'value': 'General'}, text_content='', xpath='/[document]/html/body/form/input[4]', css_selector='input#menu4', parent_xpath='/[document]/html/body/form', children_count=0, depth=4, is_interactive=True, security_relevant=False)",
+          "DOMElement(tag='input', attributes={'type': 'hidden', 'name': 'mode7', 'id': 'mode7', 'value': ''}, text_content='', xpath='/[document]/html/body/form/input[5]', css_selector='input#mode7', parent_xpath='/[document]/html/body/form', children_count=0, depth=4, is_interactive=True, security_relevant=False)",
+          "DOMElement(tag='input', attributes={'type': 'hidden', 'name': 'mode8', 'id': 'mode8', 'value': ''}, text_content='', xpath='/[document]/html/body/form/input[6]', css_selector='input#mode8', parent_xpath='/[document]/html/body/form', children_count=0, depth=4, is_interactive=True, security_relevant=False)",
+          "DOMElement(tag='input', attributes={'type': 'hidden', 'name': 'mode9', 'id': 'mode9', 'value': ''}, text_content='', xpath='/[document]/html/body/form/input[7]', css_selector='input#mode9', parent_xpath='/[document]/html/body/form', children_count=0, depth=4, is_interactive=True, security_relevant=False)",
+          "DOMElement(tag='input', attributes={'type': 'hidden', 'id': 'logout'}, text_content='', xpath='/[document]/html/body/form/input[8]', css_selector='input#logout', parent_xpath='/[document]/html/body/form', children_count=0, depth=4, is_interactive=True, security_relevant=False)",
+          "DOMElement(tag='table', attributes={'class': ['tableStyle'], 'style': 'margin: 0px;'}, text_content='ConfigurationMonitoringMaintenanceSystem', xpath='/[document]/html/body/form/table', css_selector='[document] > html > body > form > table.tableStyle', parent_xpath='/[document]/html/body/form', children_count=2, depth=4, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='tbody', attributes={}, text_content='ConfigurationMonitoringMaintenanceSystem', xpath='/[document]/html/body/form/table/tbody', css_selector='[document] > html > body > form > table.tableStyle > tbody', parent_xpath='/[document]/html/body/form/table', children_count=4, depth=5, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='tr', attributes={'class': ['topAlign']}, text_content='ConfigurationMonitoringMaintenanceSystem', xpath='/[document]/html/body/form/table/tbody/tr[1]', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign', parent_xpath='/[document]/html/body/form/table/tbody', children_count=7, depth=6, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='td', attributes={'class': ['leftEdge']}, text_content='', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[1]', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td.leftEdge', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]', children_count=0, depth=7, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='td', attributes={'valign': 'top'}, text_content='ConfigurationMonitoringMaintenanceSystem', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]', children_count=3, depth=7, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='table', attributes={'class': ['tableStyle']}, text_content='ConfigurationMonitoringMaintenanceSystem', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td > table.tableStyle', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]', children_count=2, depth=8, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='tbody', attributes={}, text_content='ConfigurationMonitoringMaintenanceSystem', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td > table.tableStyle > tbody', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table', children_count=6, depth=9, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='tr', attributes={}, text_content='', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[1]', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td > table.tableStyle > tbody > tr', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody', children_count=5, depth=10, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='td', attributes={'style': 'width: 8px;'}, text_content='', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[1]/td[1]', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td > table.tableStyle > tbody > tr > td', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[1]', children_count=1, depth=11, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='img', attributes={'src': 'images/clear.gif', 'width': '8'}, text_content='', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[1]/td[1]/img', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td > table.tableStyle > tbody > tr > td > img', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[1]/td[1]', children_count=0, depth=12, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='td', attributes={}, text_content='', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[1]/td[2]', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td > table.tableStyle > tbody > tr > td', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[1]', children_count=3, depth=11, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='table', attributes={'class': ['tableStyle'], 'style': 'margin-top: 8px;'}, text_content='', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[1]/td[2]/table', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td > table.tableStyle > tbody > tr > td > table.tableStyle', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[1]/td[2]', children_count=2, depth=12, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='tbody', attributes={}, text_content='', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[1]/td[2]/table/tbody', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td > table.tableStyle > tbody > tr > td > table.tableStyle > tbody', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[1]/td[2]/table', children_count=2, depth=13, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='tr', attributes={}, text_content='', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[1]/td[2]/table/tbody/tr', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td > table.tableStyle > tbody > tr > td > table.tableStyle > tbody > tr', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[1]/td[2]/table/tbody', children_count=4, depth=14, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='td', attributes={'class': ['logoNetGear', 'space50Percent', 'topAlign']}, text_content='', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[1]/td[2]/table/tbody/tr/td[1]', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td > table.tableStyle > tbody > tr > td > table.tableStyle > tbody > tr > td.logoNetGear.space50Percent.topAlign', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[1]/td[2]/table/tbody/tr', children_count=1, depth=15, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='img', attributes={'src': 'images/clear.gif', 'width': '150', 'height': '50'}, text_content='', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[1]/td[2]/table/tbody/tr/td[1]/img', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td > table.tableStyle > tbody > tr > td > table.tableStyle > tbody > tr > td.logoNetGear.space50Percent.topAlign > img', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[1]/td[2]/table/tbody/tr/td[1]', children_count=0, depth=16, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='td', attributes={'class': ['vertionImage', 'spacer50Percent', 'topAlign', 'rightHAlign']}, text_content='', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[1]/td[2]/table/tbody/tr/td[2]', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td > table.tableStyle > tbody > tr > td > table.tableStyle > tbody > tr > td.vertionImage.spacer50Percent.topAlign.rightHAlign', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[1]/td[2]/table/tbody/tr', children_count=1, depth=15, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='img', attributes={'src': 'images/clear.gif', 'width': '205', 'height': '50'}, text_content='', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[1]/td[2]/table/tbody/tr/td[2]/img', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td > table.tableStyle > tbody > tr > td > table.tableStyle > tbody > tr > td.vertionImage.spacer50Percent.topAlign.rightHAlign > img', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[1]/td[2]/table/tbody/tr/td[2]', children_count=0, depth=16, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='tr', attributes={}, text_content='ConfigurationMonitoringMaintenance', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[2]', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td > table.tableStyle > tbody > tr', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody', children_count=5, depth=10, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='td', attributes={}, text_content='', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[2]/td[1]', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td > table.tableStyle > tbody > tr > td', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[2]', children_count=1, depth=11, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='img', attributes={'src': 'images/clear.gif', 'width': '8'}, text_content='', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[2]/td[1]/img', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td > table.tableStyle > tbody > tr > td > img', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[2]/td[1]', children_count=0, depth=12, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='td', attributes={}, text_content='ConfigurationMonitoringMaintenance', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[2]/td[2]', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td > table.tableStyle > tbody > tr > td', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[2]', children_count=3, depth=11, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='table', attributes={'class': ['tableStyle']}, text_content='ConfigurationMonitoringMaintenance', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[2]/td[2]/table', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td > table.tableStyle > tbody > tr > td > table.tableStyle', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[2]/td[2]', children_count=2, depth=12, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='tbody', attributes={}, text_content='ConfigurationMonitoringMaintenance', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[2]/td[2]/table/tbody', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td > table.tableStyle > tbody > tr > td > table.tableStyle > tbody', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[2]/td[2]/table', children_count=2, depth=13, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='tr', attributes={}, text_content='ConfigurationMonitoringMaintenance', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[2]/td[2]/table/tbody/tr', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td > table.tableStyle > tbody > tr > td > table.tableStyle > tbody > tr', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[2]/td[2]/table/tbody', children_count=3, depth=14, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='td', attributes={'class': ['bottomAlign']}, text_content='ConfigurationMonitoringMaintenance', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td > table.tableStyle > tbody > tr > td > table.tableStyle > tbody > tr > td.bottomAlign', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[2]/td[2]/table/tbody/tr', children_count=3, depth=15, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='table', attributes={'class': ['tableStyle']}, text_content='ConfigurationMonitoringMaintenance', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td/table', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td > table.tableStyle > tbody > tr > td > table.tableStyle > tbody > tr > td.bottomAlign > table.tableStyle', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td', children_count=2, depth=16, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='tbody', attributes={}, text_content='ConfigurationMonitoringMaintenance', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td/table/tbody', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td > table.tableStyle > tbody > tr > td > table.tableStyle > tbody > tr > td.bottomAlign > table.tableStyle > tbody', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td/table', children_count=2, depth=17, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='tr', attributes={}, text_content='ConfigurationMonitoringMaintenance', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td/table/tbody/tr', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td > table.tableStyle > tbody > tr > td > table.tableStyle > tbody > tr > td.bottomAlign > table.tableStyle > tbody > tr', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td/table/tbody', children_count=5, depth=18, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='td', attributes={'class': ['spacer80Percent', 'bottomAlign'], 'id': 'tabs'}, text_content='ConfigurationMonitoringMaintenance', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td/table/tbody/tr/td[1]', css_selector='td#tabs', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td/table/tbody/tr', children_count=3, depth=19, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='ul', attributes={'class': ['tabs'], 'id': 'primaryNav'}, text_content='ConfigurationMonitoringMaintenance', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td/table/tbody/tr/td[1]/ul', css_selector='ul#primaryNav', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td/table/tbody/tr/td[1]', children_count=6, depth=20, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='li', attributes={'style': 'background: url(../../images/tab_r_A.gif) no-repeat right top;'}, text_content='Configuration', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td/table/tbody/tr/td[1]/ul/li[1]', css_selector='ul#primaryNav > li', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td/table/tbody/tr/td[1]/ul', children_count=1, depth=21, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='a', attributes={'href': \"javascript:prepareURL('','','','Configuration','');\", 'target': 'master', 'style': 'background: url(../../images/tab_l_A.gif) no-repeat left top; color: #FFFFFF;'}, text_content='Configuration', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td/table/tbody/tr/td[1]/ul/li[1]/a', css_selector='ul#primaryNav > li > a', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td/table/tbody/tr/td[1]/ul/li[1]', children_count=1, depth=22, is_interactive=True, security_relevant=False)",
+          "DOMElement(tag='li', attributes={}, text_content='Monitoring', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td/table/tbody/tr/td[1]/ul/li[2]', css_selector='ul#primaryNav > li', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td/table/tbody/tr/td[1]/ul', children_count=1, depth=21, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='a', attributes={'href': \"javascript:prepareURL('','','','Monitoring','');\", 'target': 'master'}, text_content='Monitoring', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td/table/tbody/tr/td[1]/ul/li[2]/a', css_selector='ul#primaryNav > li > a', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td/table/tbody/tr/td[1]/ul/li[2]', children_count=1, depth=22, is_interactive=True, security_relevant=False)",
+          "DOMElement(tag='li', attributes={}, text_content='Maintenance', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td/table/tbody/tr/td[1]/ul/li[3]', css_selector='ul#primaryNav > li', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td/table/tbody/tr/td[1]/ul', children_count=1, depth=21, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='a', attributes={'href': \"javascript:prepareURL('','','','Maintenance','');\", 'target': 'master'}, text_content='Maintenance', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td/table/tbody/tr/td[1]/ul/li[3]/a', css_selector='ul#primaryNav > li > a', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td/table/tbody/tr/td[1]/ul/li[3]', children_count=1, depth=22, is_interactive=True, security_relevant=False)",
+          "DOMElement(tag='td', attributes={'class': ['loginActionCell', 'spacer20Percent', 'rightHAlign', 'padding5LeftRight']}, text_content='', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td/table/tbody/tr/td[2]', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td > table.tableStyle > tbody > tr > td > table.tableStyle > tbody > tr > td.bottomAlign > table.tableStyle > tbody > tr > td.loginActionCell.spacer20Percent.rightHAlign.padding5LeftRight', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td/table/tbody/tr', children_count=1, depth=19, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='a', attributes={'href': 'javascript:void(0);'}, text_content='', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td/table/tbody/tr/td[2]/a', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td > table.tableStyle > tbody > tr > td > table.tableStyle > tbody > tr > td.bottomAlign > table.tableStyle > tbody > tr > td.loginActionCell.spacer20Percent.rightHAlign.padding5LeftRight > a', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td/table/tbody/tr/td[2]', children_count=1, depth=20, is_interactive=True, security_relevant=False)",
+          "DOMElement(tag='img', attributes={'src': 'images/logout_button.gif', 'style': 'border:0px; margin-right: 7px; margin-bottom: 4px; float:right;', 'onclick': 'processLogout();'}, text_content='', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td/table/tbody/tr/td[2]/a/img', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td > table.tableStyle > tbody > tr > td > table.tableStyle > tbody > tr > td.bottomAlign > table.tableStyle > tbody > tr > td.loginActionCell.spacer20Percent.rightHAlign.padding5LeftRight > a > img', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[2]/td[2]/table/tbody/tr/td/table/tbody/tr/td[2]/a', children_count=0, depth=21, is_interactive=True, security_relevant=False)",
+          "DOMElement(tag='tr', attributes={'class': ['background-blue']}, text_content='System', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[3]', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td > table.tableStyle > tbody > tr.background-blue', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody', children_count=5, depth=10, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='td', attributes={}, text_content='', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[3]/td[1]', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td > table.tableStyle > tbody > tr.background-blue > td', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[3]', children_count=1, depth=11, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='img', attributes={'src': 'images/clear.gif', 'width': '8'}, text_content='', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[3]/td[1]/img', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td > table.tableStyle > tbody > tr.background-blue > td > img', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[3]/td[1]', children_count=0, depth=12, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='td', attributes={'class': ['padding7Top', 'spacer100Percent']}, text_content='System', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[3]/td[2]', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td > table.tableStyle > tbody > tr.background-blue > td.padding7Top.spacer100Percent', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[3]', children_count=3, depth=11, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='div', attributes={'class': ['submenu'], 'submenu': 'yes'}, text_content='System', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[3]/td[2]/div', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td > table.tableStyle > tbody > tr.background-blue > td.padding7Top.spacer100Percent > div.submenu', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[3]/td[2]', children_count=3, depth=12, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='ul', attributes={'id': 'secondaryNav'}, text_content='System', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[3]/td[2]/div/ul', css_selector='ul#secondaryNav', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[3]/td[2]/div', children_count=2, depth=13, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='li', attributes={}, text_content='System', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[3]/td[2]/div/ul/li', css_selector='ul#secondaryNav > li', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[3]/td[2]/div/ul', children_count=2, depth=14, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='a', attributes={'href': \"javascript:prepareURL('','','System','Configuration','');\", 'target': 'master', 'style': 'color: #ffa400;'}, text_content='System', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[3]/td[2]/div/ul/li/a', css_selector='ul#secondaryNav > li > a', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]/td[2]/table/tbody/tr[3]/td[2]/div/ul/li', children_count=1, depth=15, is_interactive=True, security_relevant=False)",
+          "DOMElement(tag='td', attributes={'class': ['rightEdge']}, text_content='', xpath='/[document]/html/body/form/table/tbody/tr[1]/td[3]', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td.rightEdge', parent_xpath='/[document]/html/body/form/table/tbody/tr[1]', children_count=0, depth=7, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='tr', attributes={'class': ['topAlign']}, text_content='', xpath='/[document]/html/body/form/table/tbody/tr[2]', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign', parent_xpath='/[document]/html/body/form/table/tbody', children_count=7, depth=6, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='td', attributes={'valign': 'top', 'class': ['leftBodyNotch', 'topAlign']}, text_content='', xpath='/[document]/html/body/form/table/tbody/tr[2]/td[1]', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td.leftBodyNotch.topAlign', parent_xpath='/[document]/html/body/form/table/tbody/tr[2]', children_count=0, depth=7, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='td', attributes={}, text_content='', xpath='/[document]/html/body/form/table/tbody/tr[2]/td[2]', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td', parent_xpath='/[document]/html/body/form/table/tbody/tr[2]', children_count=3, depth=7, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='table', attributes={'class': ['tableStyle']}, text_content='', xpath='/[document]/html/body/form/table/tbody/tr[2]/td[2]/table', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td > table.tableStyle', parent_xpath='/[document]/html/body/form/table/tbody/tr[2]/td[2]', children_count=2, depth=8, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='tbody', attributes={}, text_content='', xpath='/[document]/html/body/form/table/tbody/tr[2]/td[2]/table/tbody', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td > table.tableStyle > tbody', parent_xpath='/[document]/html/body/form/table/tbody/tr[2]/td[2]/table', children_count=2, depth=9, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='tr', attributes={'class': ['topAlign']}, text_content='', xpath='/[document]/html/body/form/table/tbody/tr[2]/td[2]/table/tbody/tr', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td > table.tableStyle > tbody > tr.topAlign', parent_xpath='/[document]/html/body/form/table/tbody/tr[2]/td[2]/table/tbody', children_count=7, depth=10, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='td', attributes={'class': ['leftNextBodyNotch']}, text_content='', xpath='/[document]/html/body/form/table/tbody/tr[2]/td[2]/table/tbody/tr/td[1]', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td > table.tableStyle > tbody > tr.topAlign > td.leftNextBodyNotch', parent_xpath='/[document]/html/body/form/table/tbody/tr[2]/td[2]/table/tbody/tr', children_count=1, depth=11, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='img', attributes={'src': 'images/clear.gif', 'width': '11', 'height': '16'}, text_content='', xpath='/[document]/html/body/form/table/tbody/tr[2]/td[2]/table/tbody/tr/td[1]/img', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td > table.tableStyle > tbody > tr.topAlign > td.leftNextBodyNotch > img', parent_xpath='/[document]/html/body/form/table/tbody/tr[2]/td[2]/table/tbody/tr/td[1]', children_count=0, depth=12, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='td', attributes={'class': ['middleBodyNotch', 'spacer100Percent']}, text_content='', xpath='/[document]/html/body/form/table/tbody/tr[2]/td[2]/table/tbody/tr/td[2]', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td > table.tableStyle > tbody > tr.topAlign > td.middleBodyNotch.spacer100Percent', parent_xpath='/[document]/html/body/form/table/tbody/tr[2]/td[2]/table/tbody/tr', children_count=0, depth=11, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='td', attributes={'class': ['rightNextBodyNotch']}, text_content='', xpath='/[document]/html/body/form/table/tbody/tr[2]/td[2]/table/tbody/tr/td[3]', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td > table.tableStyle > tbody > tr.topAlign > td.rightNextBodyNotch', parent_xpath='/[document]/html/body/form/table/tbody/tr[2]/td[2]/table/tbody/tr', children_count=1, depth=11, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='img', attributes={'src': 'images/clear.gif', 'width': '11'}, text_content='', xpath='/[document]/html/body/form/table/tbody/tr[2]/td[2]/table/tbody/tr/td[3]/img', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td > table.tableStyle > tbody > tr.topAlign > td.rightNextBodyNotch > img', parent_xpath='/[document]/html/body/form/table/tbody/tr[2]/td[2]/table/tbody/tr/td[3]', children_count=0, depth=12, is_interactive=False, security_relevant=False)",
+          "DOMElement(tag='td', attributes={'class': ['rightBodyNotch']}, text_content='', xpath='/[document]/html/body/form/table/tbody/tr[2]/td[3]', css_selector='[document] > html > body > form > table.tableStyle > tbody > tr.topAlign > td.rightBodyNotch', parent_xpath='/[document]/html/body/form/table/tbody/tr[2]', children_count=0, depth=7, is_interactive=False, security_relevant=False)"
+        ],
+        "security_context": "SecurityContext(url='http://127.0.0.1:8888/header.php', authentication_required=False, csrf_tokens=[], session_identifiers=[], sensitive_parameters=[], input_validation_points=[], potential_vulnerabilities=['potential_csrf_missing_token'])",
+        "fuzzing_data": {
+          "target_url": "http://127.0.0.1:8888/header.php",
+          "endpoint_type": "unknown",
+          "is_api_endpoint": true,
+          "input_points": [
+            {
+              "type": "input",
+              "name": "menu1",
+              "id": "menu1",
+              "input_type": "hidden",
+              "xpath": "/[document]/html/body/form/input[1]",
+              "css_selector": "input#menu1",
+              "required": false,
+              "security_relevant": false
+            },
+            {
+              "type": "input",
+              "name": "menu2",
+              "id": "menu2",
+              "input_type": "hidden",
+              "xpath": "/[document]/html/body/form/input[2]",
+              "css_selector": "input#menu2",
+              "required": false,
+              "security_relevant": false
+            },
+            {
+              "type": "input",
+              "name": "menu3",
+              "id": "menu3",
+              "input_type": "hidden",
+              "xpath": "/[document]/html/body/form/input[3]",
+              "css_selector": "input#menu3",
+              "required": false,
+              "security_relevant": false
+            },
+            {
+              "type": "input",
+              "name": "menu4",
+              "id": "menu4",
+              "input_type": "hidden",
+              "xpath": "/[document]/html/body/form/input[4]",
+              "css_selector": "input#menu4",
+              "required": false,
+              "security_relevant": false
+            },
+            {
+              "type": "input",
+              "name": "mode7",
+              "id": "mode7",
+              "input_type": "hidden",
+              "xpath": "/[document]/html/body/form/input[5]",
+              "css_selector": "input#mode7",
+              "required": false,
+              "security_relevant": false
+            },
+            {
+              "type": "input",
+              "name": "mode8",
+              "id": "mode8",
+              "input_type": "hidden",
+              "xpath": "/[document]/html/body/form/input[6]",
+              "css_selector": "input#mode8",
+              "required": false,
+              "security_relevant": false
+            },
+            {
+              "type": "input",
+              "name": "mode9",
+              "id": "mode9",
+              "input_type": "hidden",
+              "xpath": "/[document]/html/body/form/input[7]",
+              "css_selector": "input#mode9",
+              "required": false,
+              "security_relevant": false
+            },
+            {
+              "type": "input",
+              "name": null,
+              "id": "logout",
+              "input_type": "hidden",
+              "xpath": "/[document]/html/body/form/input[8]",
+              "css_selector": "input#logout",
+              "required": false,
+              "security_relevant": false
+            }
+          ],
+          "parameters": {},
+          "csrf_tokens": [],
+          "session_requirements": [],
+          "validation_constraints": [],
+          "potential_attack_vectors": [
+            "potential_csrf_missing_token"
+          ]
+        },
+        "analysis_timestamp": 1750994313.2175481
+      }
+    }
+  }
+}

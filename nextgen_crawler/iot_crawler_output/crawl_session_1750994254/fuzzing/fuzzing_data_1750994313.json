@@ -1,0 +1,495 @@
+{
+  "metadata": {
+    "session_id": "cba62c60-1af1-4722-b75a-ab97d68d5675",
+    "timestamp": 1750994313,
+    "data_type": "fuzzing_preparation",
+    "target_url": "http://127.0.0.1:8888",
+    "generation_config": {
+      "max_depth": 10,
+      "extract_forms": true,
+      "extract_links": true
+    }
+  },
+  "fuzzing_data": {
+    "session_id": "cba62c60-1af1-4722-b75a-ab97d68d5675",
+    "target_info": {
+      "url": "http://127.0.0.1:8888",
+      "authentication": {
+        "required": true,
+        "method": "form_based",
+        "username": "admin",
+        "password": "password"
+      }
+    },
+    "endpoints": [
+      {
+        "url": "http://127.0.0.1:8888",
+        "type": "unknown",
+        "is_api": false,
+        "path_segments": [],
+        "query_params": {},
+        "file_extension": null
+      },
+      {
+        "url": "http://127.0.0.1:8888/header.php",
+        "type": "unknown",
+        "is_api": true,
+        "path_segments": [
+          "header.php"
+        ],
+        "query_params": {},
+        "file_extension": "php"
+      }
+    ],
+    "parameters": [],
+    "forms": [
+      {
+        "url": "http://127.0.0.1:8888/header.php",
+        "frame": "header",
+        "index": 0,
+        "action": "http://127.0.0.1:8888/header.php",
+        "method": "post",
+        "fields": [
+          {
+            "type": "input",
+            "input_type": "hidden",
+            "name": "menu1",
+            "id": "menu1",
+            "value": "Configuration",
+            "placeholder": "",
+            "required": false
+          },
+          {
+            "type": "input",
+            "input_type": "hidden",
+            "name": "menu2",
+            "id": "menu2",
+            "value": "System",
+            "placeholder": "",
+            "required": false
+          },
+          {
+            "type": "input",
+            "input_type": "hidden",
+            "name": "menu3",
+            "id": "menu3",
+            "value": "Basic",
+            "placeholder": "",
+            "required": false
+          },
+          {
+            "type": "input",
+            "input_type": "hidden",
+            "name": "menu4",
+            "id": "menu4",
+            "value": "General",
+            "placeholder": "",
+            "required": false
+          },
+          {
+            "type": "input",
+            "input_type": "hidden",
+            "name": "mode7",
+            "id": "mode7",
+            "value": "",
+            "placeholder": "",
+            "required": false
+          },
+          {
+            "type": "input",
+            "input_type": "hidden",
+            "name": "mode8",
+            "id": "mode8",
+            "value": "",
+            "placeholder": "",
+            "required": false
+          },
+          {
+            "type": "input",
+            "input_type": "hidden",
+            "name": "mode9",
+            "id": "mode9",
+            "value": "",
+            "placeholder": "",
+            "required": false
+          },
+          {
+            "type": "input",
+            "input_type": "hidden",
+            "name": "",
+            "id": "logout",
+            "value": "",
+            "placeholder": "",
+            "required": false
+          }
+        ],
+        "timestamp": 1750994308.986506
+      },
+      {
+        "url": "http://127.0.0.1:8888/",
+        "frame": "master",
+        "index": 0,
+        "action": "http://127.0.0.1:8888/index.php?page=master",
+        "method": "post",
+        "fields": [
+          {
+            "type": "input",
+            "input_type": "hidden",
+            "name": "",
+            "id": "loading",
+            "value": "true",
+            "placeholder": "",
+            "required": false
+          },
+          {
+            "type": "input",
+            "input_type": "hidden",
+            "name": "menu1",
+            "id": "menu1",
+            "value": "Configuration",
+            "placeholder": "",
+            "required": false
+          },
+          {
+            "type": "input",
+            "input_type": "hidden",
+            "name": "menu2",
+            "id": "menu2",
+            "value": "System",
+            "placeholder": "",
+            "required": false
+          },
+          {
+            "type": "input",
+            "input_type": "hidden",
+            "name": "menu3",
+            "id": "menu3",
+            "value": "General",
+            "placeholder": "",
+            "required": false
+          },
+          {
+            "type": "input",
+            "input_type": "hidden",
+            "name": "menu4",
+            "id": "menu4",
+            "value": "General",
+            "placeholder": "",
+            "required": false
+          },
+          {
+            "type": "input",
+            "input_type": "hidden",
+            "name": "mode7",
+            "id": "mode7",
+            "value": "",
+            "placeholder": "",
+            "required": false
+          },
+          {
+            "type": "input",
+            "input_type": "hidden",
+            "name": "mode8",
+            "id": "mode8",
+            "value": "",
+            "placeholder": "",
+            "required": false
+          },
+          {
+            "type": "input",
+            "input_type": "hidden",
+            "name": "mode9",
+            "id": "mode9",
+            "value": "",
+            "placeholder": "",
+            "required": false
+          },
+          {
+            "type": "input",
+            "input_type": "hidden",
+            "name": "Action",
+            "id": "Action",
+            "value": "",
+            "placeholder": "",
+            "required": false
+          },
+          {
+            "type": "input",
+            "input_type": "hidden",
+            "name": "",
+            "id": "logout",
+            "value": "",
+            "placeholder": "",
+            "required": false
+          },
+          {
+            "type": "input",
+            "input_type": "hidden",
+            "name": "",
+            "id": "helpURL",
+            "value": "General",
+            "placeholder": "",
+            "required": false
+          },
+          {
+            "type": "input",
+            "input_type": "radio",
+            "name": "system['basicSettings']['cloudStatus']",
+            "id": "enableMode",
+            "value": "1",
+            "placeholder": "",
+            "required": false
+          },
+          {
+            "type": "input",
+            "input_type": "radio",
+            "name": "system['basicSettings']['cloudStatus']",
+            "id": "enableMode",
+            "value": "0",
+            "placeholder": "",
+            "required": false
+          },
+          {
+            "type": "input",
+            "input_type": "hidden",
+            "name": "enableMode1",
+            "id": "enableMode1",
+            "value": "1",
+            "placeholder": "",
+            "required": false
+          },
+          {
+            "type": "input",
+            "input_type": "hidden",
+            "name": "hidden_cloudStatus",
+            "id": "hidden_cloudStatus",
+            "value": "",
+            "placeholder": "",
+            "required": false
+          },
+          {
+            "type": "input",
+            "input_type": "hidden",
+            "name": "hiddenAP_StandaloneMode",
+            "id": "hiddenAP_StandaloneMode",
+            "value": "",
+            "placeholder": "",
+            "required": false
+          },
+          {
+            "type": "input",
+            "input_type": "hidden",
+            "name": "serno",
+            "id": "serno",
+            "value": "���������������������������������������������������������������������������������������������������������",
+            "placeholder": "",
+            "required": false
+          },
+          {
+            "type": "input",
+            "input_type": "text",
+            "name": "system['basicSettings']['cloudConnectivityStatus']",
+            "id": "enableCloud",
+            "value": "Pending",
+            "placeholder": "",
+            "required": false
+          },
+          {
+            "type": "input",
+            "input_type": "text",
+            "name": "connStatus",
+            "id": "connStatus",
+            "value": "Disconnected",
+            "placeholder": "",
+            "required": false
+          },
+          {
+            "type": "textarea",
+            "name": "activewin",
+            "id": "activewin",
+            "placeholder": ""
+          }
+        ],
+        "timestamp": 1750994309.256314
+      },
+      {
+        "url": "http://127.0.0.1:8888/header.php",
+        "frame": null,
+        "index": 0,
+        "action": "http://127.0.0.1:8888/header.php",
+        "method": "post",
+        "fields": [
+          {
+            "type": "input",
+            "input_type": "hidden",
+            "name": "menu1",
+            "id": "menu1",
+            "value": "Configuration",
+            "placeholder": "",
+            "required": false
+          },
+          {
+            "type": "input",
+            "input_type": "hidden",
+            "name": "menu2",
+            "id": "menu2",
+            "value": "System",
+            "placeholder": "",
+            "required": false
+          },
+          {
+            "type": "input",
+            "input_type": "hidden",
+            "name": "menu3",
+            "id": "menu3",
+            "value": "Basic",
+            "placeholder": "",
+            "required": false
+          },
+          {
+            "type": "input",
+            "input_type": "hidden",
+            "name": "menu4",
+            "id": "menu4",
+            "value": "General",
+            "placeholder": "",
+            "required": false
+          },
+          {
+            "type": "input",
+            "input_type": "hidden",
+            "name": "mode7",
+            "id": "mode7",
+            "value": "",
+            "placeholder": "",
+            "required": false
+          },
+          {
+            "type": "input",
+            "input_type": "hidden",
+            "name": "mode8",
+            "id": "mode8",
+            "value": "",
+            "placeholder": "",
+            "required": false
+          },
+          {
+            "type": "input",
+            "input_type": "hidden",
+            "name": "mode9",
+            "id": "mode9",
+            "value": "",
+            "placeholder": "",
+            "required": false
+          },
+          {
+            "type": "input",
+            "input_type": "hidden",
+            "name": "",
+            "id": "logout",
+            "value": "",
+            "placeholder": "",
+            "required": false
+          }
+        ],
+        "timestamp": 1750994313.036176
+      }
+    ],
+    "session_data": {
+      "session_id": "cba62c60-1af1-4722-b75a-ab97d68d5675",
+      "timestamp": 1750994313.22118,
+      "auth_state": {
+        "target_url": "http://127.0.0.1:8888",
+        "username": "admin",
+        "authenticated": true,
+        "auth_frame": "master",
+        "cookies": [
+          {
+            "domain": "127.0.0.1",
+            "httpOnly": true,
+            "name": "PHPSESSID",
+            "path": "/",
+            "sameSite": "Lax",
+            "secure": true,
+            "value": "a507d8cda1b1fab07e2facd93d76cb52"
+          }
+        ],
+        "local_storage": {},
+        "session_storage": {},
+        "current_url": "http://127.0.0.1:8888/index.php",
+        "page_title": "Netgear",
+        "timestamp": 1750994304.059596,
+        "browser_state": null
+      },
+      "current_url": "http://127.0.0.1:8888/header.php",
+      "page_source": "<html xmlns=\"http://www.w3.org/1999/xhtml\"><head><script>\nvar _apmode = true;\n</script><script type=\"text/javascript\" src=\"include/scripts/prototype.js?code=6153137\"></script>\n<script type=\"text/javascript\" src=\"include/scripts/prototype-ext.js?code=6153137\"></script>\n<script type=\"text/javascript\" src=\"include/scripts/browser-ext.js?code=6153137\"></script>\n<script type=\"text/javascript\" src=\"config.php?json=true&amp;code=6153137\"></script>\n<script type=\"text/javascript\" src=\"include/scripts/common.js?code=6153137\"></script>\n<script type=\"text/javascript\" src=\"include/scripts/menu.js?code=6153137\"></script>\n<link rel=\"stylesheet\" href=\"include/css/default.css?code=6153137\" type=\"text/css\">\n<link rel=\"stylesheet\" href=\"include/css/style.css?code=6153137\" type=\"text/css\">\n<link rel=\"stylesheet\" href=\"include/css/fonts.css?code=6153137\" type=\"text/css\">\n<link rel=\"stylesheet\" href=\"include/css/layout.css?code=6153137\" type=\"text/css\">\n<script>\nvar _initiateMenu = true;\n</script>\n</head>\n<body style=\"background: #FFFFFF; margin: 0px;\">\n<form name=\"navForm\" action=\"header.php\" method=\"post\">\n\t<input type=\"hidden\" name=\"menu1\" id=\"menu1\" value=\"Configuration\">\n\t<input type=\"hidden\" name=\"menu2\" id=\"menu2\" value=\"System\">\n\t<input type=\"hidden\" name=\"menu3\" id=\"menu3\" value=\"Basic\">\n\t<input type=\"hidden\" name=\"menu4\" id=\"menu4\" value=\"General\">\n\t<input type=\"hidden\" name=\"mode7\" id=\"mode7\" value=\"\">\n\t<input type=\"hidden\" name=\"mode8\" id=\"mode8\" value=\"\">\n\t<input type=\"hidden\" name=\"mode9\" id=\"mode9\" value=\"\">\n\t<input type=\"hidden\" id=\"logout\">\n\t\t<!-- start main Frame -->\n<table class=\"tableStyle\" style=\"margin: 0px;\">\n\t<tbody><tr class=\"topAlign\">\n\t\t\t\t\t<td class=\"leftEdge\"></td>\n\t\t<td valign=\"top\">\n\t\t\t<table class=\"tableStyle\">\n\t\t\t\t<tbody><tr>\n\t\t\t\t\t<td style=\"width: 8px;\"><img src=\"images/clear.gif\" width=\"8\"></td>\n\t\t\t\t\t<td>\n\t\t\t\t\t\t<table class=\"tableStyle\" style=\"margin-top: 8px;\">\n\t\t\t\t\t\t\t<tbody><tr>\n\t\t\t\t\t\t\t\t<td class=\"logoNetGear space50Percent topAlign\"><img src=\"images/clear.gif\" width=\"150\" height=\"50\"></td><td class=\"vertionImage spacer50Percent topAlign rightHAlign\"><img src=\"images/clear.gif\" width=\"205\" height=\"50\"></td>\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t</tbody></table>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr>\n\t\t\t\t\t<td><img src=\"images/clear.gif\" width=\"8\"></td>\n\t\t\t\t\t<td>\n\t\t\t\t\t\t<table class=\"tableStyle\">\n\t\t\t\t\t\t\t<tbody><tr>\n\t\t\t\t\t\t\t\t<td class=\"bottomAlign\">\n\t\t\t\t\t\t\t\t\t<table class=\"tableStyle\">\n\t\t\t\t\t\t\t\t\t\t<tbody><tr>\n\t\t\t\t\t\t\t\t\t\t\t<td class=\"spacer80Percent bottomAlign\" id=\"tabs\">\n\t\t\t\t\t\t\t\t\t\t\t\t<ul class=\"tabs\" id=\"primaryNav\"><li style=\"background: url(../../images/tab_r_A.gif) no-repeat right top;\"><a href=\"javascript:prepareURL('','','','Configuration','');\" target=\"master\" style=\"background: url(../../images/tab_l_A.gif) no-repeat left top; color: #FFFFFF;\">Configuration</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a href=\"javascript:prepareURL('','','','Monitoring','');\" target=\"master\">Monitoring</a></li> \n\n \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a href=\"javascript:prepareURL('','','','Maintenance','');\" target=\"master\">Maintenance</a></li>\t\t\t\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t\t\t\t\t<td class=\"loginActionCell spacer20Percent rightHAlign padding5LeftRight\"><a href=\"javascript:void(0);\"><img src=\"images/logout_button.gif\" style=\"border:0px; margin-right: 7px; margin-bottom: 4px; float:right;\" onclick=\"processLogout();\"></a></td>\n\t\t\t\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t\t\t\t</tbody></table>\n\t\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t</tr>\n\t\t\t\t\t\t</tbody></table>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t\t<tr class=\"background-blue\">\n\t\t\t\t\t<td><img src=\"images/clear.gif\" width=\"8\"></td>\n\t\t\t\t\t<td class=\"padding7Top spacer100Percent\">\n\t\t\t\t\t\t<div class=\"submenu\" submenu=\"yes\">\n\t\t\t\t\t\t\t<ul id=\"secondaryNav\">\t\t\t\t\t\t\t\t<li><a href=\"javascript:prepareURL('','','System','Configuration','');\" target=\"master\" style=\"color: #ffa400;\">System</a>\t\t\t\t\t\t\t</li></ul>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t</tbody></table>\n\t\t</td>\n\t\t<td class=\"rightEdge\"></td>\n\t</tr>\n\t<tr class=\"topAlign\">\n\t\t\t\t\t<td valign=\"top\" class=\"leftBodyNotch topAlign\"></td>\n\t\t\t\t\t<td>\n\t\t\t\t\t\t<table class=\"tableStyle\">\n\t\t\t\t<tbody><tr class=\"topAlign\">\n\t\t\t\t\t<td class=\"leftNextBodyNotch\"><img src=\"images/clear.gif\" width=\"11\" height=\"16\"></td>\n\t\t\t\t\t<td class=\"middleBodyNotch spacer100Percent\"></td>\n\t\t\t\t\t\t\t\t\t\t\t<td class=\"rightNextBodyNotch\"><img src=\"images/clear.gif\" width=\"11\"></td>\n\t\t\t\t</tr>\n\t\t\t\t\t\t</tbody></table>\n\t\t\t\t\t</td>\n\t\t\t\t\t<td class=\"rightBodyNotch\"></td>\n\t\t\t</tr>\n</tbody></table>\n</form>\n\n</body></html>",
+      "cookies": [
+        {
+          "domain": "127.0.0.1",
+          "httpOnly": true,
+          "name": "PHPSESSID",
+          "path": "/",
+          "sameSite": "Lax",
+          "secure": true,
+          "value": "a507d8cda1b1fab07e2facd93d76cb52"
+        }
+      ],
+      "window_size": {
+        "width": 1200,
+        "height": 875
+      },
+      "crawl_path": [
+        {
+          "action_type": "authenticate",
+          "url": "http://127.0.0.1:8888",
+          "timestamp": 1750994304.045674,
+          "details": {
+            "username": "admin",
+            "success": true
+          }
+        }
+      ],
+      "visited_urls": [],
+      "browser_logs": [
+        {
+          "level": "SEVERE",
+          "message": "http://127.0.0.1:8888/include/scripts/ipv6.js?code=6810373 - Failed to load resource: the server responded with a status of 404 (Not Found)",
+          "source": "network",
+          "timestamp": 1750994255265
+        },
+        {
+          "level": "SEVERE",
+          "message": "http://127.0.0.1:8888/favicon.ico - Failed to load resource: the server responded with a status of 404 (Not Found)",
+          "source": "network",
+          "timestamp": 1750994258400
+        },
+        {
+          "level": "SEVERE",
+          "message": "http://127.0.0.1:8888/include/scripts/ipv6.js?code=6015045 - Failed to load resource: the server responded with a status of 404 (Not Found)",
+          "source": "network",
+          "timestamp": 1750994264282
+        },
+        {
+          "level": "SEVERE",
+          "message": "http://127.0.0.1:8888/include/scripts/ipv6.js?code=4823127 - Failed to load resource: the server responded with a status of 404 (Not Found)",
+          "source": "network",
+          "timestamp": 1750994305517
+        },
+        {
+          "level": "SEVERE",
+          "message": "http://127.0.0.1:8888/include/scripts/menu.js?code=6153137 190:34 Uncaught TypeError: Cannot read properties of undefined (reading '_apmode')",
+          "source": "javascript",
+          "timestamp": 1750994309999
+        }
+      ]
+    },
+    "attack_surface": {
+      "total_input_points": 0,
+      "total_parameters": 0,
+      "total_csrf_tokens": 0,
+      "api_endpoints": 1,
+      "config_endpoints": 0,
+      "action_endpoints": 0
+    }
+  }
+}

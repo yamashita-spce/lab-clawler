@@ -1,0 +1,1410 @@
+{
+  "session_info": {
+    "target_url": "http://127.0.0.1:8888",
+    "timestamp": 1750951779.6018932,
+    "total_pages": 6,
+    "total_fuzzing_targets": 2,
+    "total_navigation_paths": 1
+  },
+  "page_states": [
+    {
+      "url": "http://127.0.0.1:8888",
+      "title": "Netgear",
+      "timestamp": 1750951750.181789,
+      "page_hash": "4039eeec9a464fc4dea705b3e6c9cfac",
+      "forms": [],
+      "links": [],
+      "inputs": [],
+      "frames": [
+        {
+          "index": 0,
+          "name": "header",
+          "src": "http://127.0.0.1:8888/header.php",
+          "id": ""
+        },
+        {
+          "index": 1,
+          "name": "thirdmenu",
+          "src": "http://127.0.0.1:8888/thirdMenu.html",
+          "id": ""
+        },
+        {
+          "index": 2,
+          "name": "master",
+          "src": "http://127.0.0.1:8888/index.php",
+          "id": ""
+        },
+        {
+          "index": 3,
+          "name": "dummyright",
+          "src": "http://127.0.0.1:8888/background.html",
+          "id": ""
+        },
+        {
+          "index": 4,
+          "name": "action",
+          "src": "http://127.0.0.1:8888/button.html",
+          "id": ""
+        }
+      ],
+      "cookies": [
+        {
+          "domain": "127.0.0.1",
+          "httpOnly": true,
+          "name": "PHPSESSID",
+          "path": "/",
+          "sameSite": "Lax",
+          "secure": true,
+          "value": "44cf6f2104c6975bd81ddf14c2abcdf5"
+        }
+      ],
+      "local_storage": {
+        "clear": {},
+        "getItem": {},
+        "key": {},
+        "length": 0,
+        "removeItem": {},
+        "setItem": {}
+      },
+      "session_storage": {
+        "clear": {},
+        "getItem": {},
+        "key": {},
+        "length": 0,
+        "removeItem": {},
+        "setItem": {}
+      },
+      "javascript_vars": {
+        "location": "http://127.0.0.1:8888/index.php",
+        "title": "Netgear",
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/137.0.0.0 Safari/537.36"
+      },
+      "dom_structure_hash": "c7ad57f374ebd622864a48e5ad4d9497",
+      "security_tokens": []
+    },
+    {
+      "url": "http://127.0.0.1:8888/productregistration/Prod_Reg_SerialCheck.php",
+      "title": "",
+      "timestamp": 1750951760.410945,
+      "page_hash": "0079d640ce97f31534fc107c254d8e7d",
+      "forms": [],
+      "links": [],
+      "inputs": [],
+      "frames": [],
+      "cookies": [
+        {
+          "domain": "127.0.0.1",
+          "httpOnly": true,
+          "name": "PHPSESSID",
+          "path": "/",
+          "sameSite": "Lax",
+          "secure": true,
+          "value": "44cf6f2104c6975bd81ddf14c2abcdf5"
+        }
+      ],
+      "local_storage": {
+        "clear": {},
+        "getItem": {},
+        "key": {},
+        "length": 0,
+        "removeItem": {},
+        "setItem": {}
+      },
+      "session_storage": {
+        "clear": {},
+        "getItem": {},
+        "key": {},
+        "length": 0,
+        "removeItem": {},
+        "setItem": {}
+      },
+      "javascript_vars": {
+        "location": "http://127.0.0.1:8888/productregistration/Prod_Reg_SerialCheck.php",
+        "title": "",
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/137.0.0.0 Safari/537.36"
+      },
+      "dom_structure_hash": "3927d1e82ec6d8d70170737be75f17da",
+      "security_tokens": []
+    },
+    {
+      "url": "http://127.0.0.1:8888",
+      "title": "Netgear",
+      "timestamp": 1750951765.5541499,
+      "page_hash": "4039eeec9a464fc4dea705b3e6c9cfac",
+      "forms": [],
+      "links": [],
+      "inputs": [],
+      "frames": [
+        {
+          "index": 0,
+          "name": "header",
+          "src": "http://127.0.0.1:8888/header.php",
+          "id": ""
+        },
+        {
+          "index": 1,
+          "name": "thirdmenu",
+          "src": "http://127.0.0.1:8888/thirdMenu.html",
+          "id": ""
+        },
+        {
+          "index": 2,
+          "name": "master",
+          "src": "http://127.0.0.1:8888/",
+          "id": ""
+        },
+        {
+          "index": 3,
+          "name": "dummyright",
+          "src": "http://127.0.0.1:8888/background.html",
+          "id": ""
+        },
+        {
+          "index": 4,
+          "name": "action",
+          "src": "http://127.0.0.1:8888/button.html",
+          "id": ""
+        }
+      ],
+      "cookies": [
+        {
+          "domain": "127.0.0.1",
+          "httpOnly": true,
+          "name": "PHPSESSID",
+          "path": "/",
+          "sameSite": "Lax",
+          "secure": true,
+          "value": "44cf6f2104c6975bd81ddf14c2abcdf5"
+        }
+      ],
+      "local_storage": {
+        "clear": {},
+        "getItem": {},
+        "key": {},
+        "length": 0,
+        "removeItem": {},
+        "setItem": {}
+      },
+      "session_storage": {
+        "clear": {},
+        "getItem": {},
+        "key": {},
+        "length": 0,
+        "removeItem": {},
+        "setItem": {}
+      },
+      "javascript_vars": {
+        "location": "http://127.0.0.1:8888/",
+        "title": "Netgear",
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/137.0.0.0 Safari/537.36"
+      },
+      "dom_structure_hash": "c7ad57f374ebd622864a48e5ad4d9497",
+      "security_tokens": []
+    },
+    {
+      "url": "http://127.0.0.1:8888/header.php",
+      "title": "",
+      "timestamp": 1750951769.374005,
+      "page_hash": "ed9781b36e42c7b6bd5854d3d5bd7616",
+      "forms": [
+        {
+          "index": 0,
+          "action": "http://127.0.0.1:8888/header.php",
+          "method": "post",
+          "fields": [
+            {
+              "type": "hidden",
+              "name": "menu1",
+              "id": "menu1",
+              "value": "Configuration",
+              "required": false,
+              "readonly": false,
+              "disabled": false,
+              "maxlength": "",
+              "pattern": "",
+              "placeholder": ""
+            },
+            {
+              "type": "hidden",
+              "name": "menu2",
+              "id": "menu2",
+              "value": "System",
+              "required": false,
+              "readonly": false,
+              "disabled": false,
+              "maxlength": "",
+              "pattern": "",
+              "placeholder": ""
+            },
+            {
+              "type": "hidden",
+              "name": "menu3",
+              "id": "menu3",
+              "value": "Basic",
+              "required": false,
+              "readonly": false,
+              "disabled": false,
+              "maxlength": "",
+              "pattern": "",
+              "placeholder": ""
+            },
+            {
+              "type": "hidden",
+              "name": "menu4",
+              "id": "menu4",
+              "value": "General",
+              "required": false,
+              "readonly": false,
+              "disabled": false,
+              "maxlength": "",
+              "pattern": "",
+              "placeholder": ""
+            },
+            {
+              "type": "hidden",
+              "name": "mode7",
+              "id": "mode7",
+              "value": "",
+              "required": false,
+              "readonly": false,
+              "disabled": false,
+              "maxlength": "",
+              "pattern": "",
+              "placeholder": ""
+            },
+            {
+              "type": "hidden",
+              "name": "mode8",
+              "id": "mode8",
+              "value": "",
+              "required": false,
+              "readonly": false,
+              "disabled": false,
+              "maxlength": "",
+              "pattern": "",
+              "placeholder": ""
+            },
+            {
+              "type": "hidden",
+              "name": "mode9",
+              "id": "mode9",
+              "value": "",
+              "required": false,
+              "readonly": false,
+              "disabled": false,
+              "maxlength": "",
+              "pattern": "",
+              "placeholder": ""
+            },
+            {
+              "type": "hidden",
+              "name": "",
+              "id": "logout",
+              "value": "",
+              "required": false,
+              "readonly": false,
+              "disabled": false,
+              "maxlength": "",
+              "pattern": "",
+              "placeholder": ""
+            }
+          ],
+          "csrf_tokens": []
+        }
+      ],
+      "links": [
+        "javascript:prepareURL('','','','Configuration','');",
+        "javascript:prepareURL('','','','Monitoring','');",
+        "javascript:prepareURL('','','','Maintenance','');",
+        "javascript:void(0);",
+        "javascript:prepareURL('','','System','Configuration','');",
+        "http://127.0.0.1:8888/header.php"
+      ],
+      "inputs": [
+        {
+          "index": 0,
+          "tag": "input",
+          "type": "hidden",
+          "name": "menu1",
+          "id": "menu1",
+          "value": "Configuration",
+          "xpath": "//*[@id=\"menu1\"]",
+          "css_selector": "#menu1",
+          "fuzzing_priority": 5
+        },
+        {
+          "index": 1,
+          "tag": "input",
+          "type": "hidden",
+          "name": "menu2",
+          "id": "menu2",
+          "value": "System",
+          "xpath": "//*[@id=\"menu2\"]",
+          "css_selector": "#menu2",
+          "fuzzing_priority": 5
+        },
+        {
+          "index": 2,
+          "tag": "input",
+          "type": "hidden",
+          "name": "menu3",
+          "id": "menu3",
+          "value": "Basic",
+          "xpath": "//*[@id=\"menu3\"]",
+          "css_selector": "#menu3",
+          "fuzzing_priority": 5
+        },
+        {
+          "index": 3,
+          "tag": "input",
+          "type": "hidden",
+          "name": "menu4",
+          "id": "menu4",
+          "value": "General",
+          "xpath": "//*[@id=\"menu4\"]",
+          "css_selector": "#menu4",
+          "fuzzing_priority": 5
+        },
+        {
+          "index": 4,
+          "tag": "input",
+          "type": "hidden",
+          "name": "mode7",
+          "id": "mode7",
+          "value": "",
+          "xpath": "//*[@id=\"mode7\"]",
+          "css_selector": "#mode7",
+          "fuzzing_priority": 5
+        },
+        {
+          "index": 5,
+          "tag": "input",
+          "type": "hidden",
+          "name": "mode8",
+          "id": "mode8",
+          "value": "",
+          "xpath": "//*[@id=\"mode8\"]",
+          "css_selector": "#mode8",
+          "fuzzing_priority": 5
+        },
+        {
+          "index": 6,
+          "tag": "input",
+          "type": "hidden",
+          "name": "mode9",
+          "id": "mode9",
+          "value": "",
+          "xpath": "//*[@id=\"mode9\"]",
+          "css_selector": "#mode9",
+          "fuzzing_priority": 5
+        },
+        {
+          "index": 7,
+          "tag": "input",
+          "type": "hidden",
+          "name": "",
+          "id": "logout",
+          "value": "",
+          "xpath": "//*[@id=\"logout\"]",
+          "css_selector": "#logout",
+          "fuzzing_priority": 5
+        }
+      ],
+      "frames": [],
+      "cookies": [
+        {
+          "domain": "127.0.0.1",
+          "httpOnly": true,
+          "name": "PHPSESSID",
+          "path": "/",
+          "sameSite": "Lax",
+          "secure": true,
+          "value": "44cf6f2104c6975bd81ddf14c2abcdf5"
+        }
+      ],
+      "local_storage": {
+        "clear": {},
+        "getItem": {},
+        "key": {},
+        "length": 0,
+        "removeItem": {},
+        "setItem": {}
+      },
+      "session_storage": {
+        "clear": {},
+        "getItem": {},
+        "key": {},
+        "length": 0,
+        "removeItem": {},
+        "setItem": {}
+      },
+      "javascript_vars": {
+        "location": "http://127.0.0.1:8888/header.php",
+        "title": "",
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/137.0.0.0 Safari/537.36"
+      },
+      "dom_structure_hash": "76dce0405bacdc4a5275688a66c2fa1a",
+      "security_tokens": []
+    },
+    {
+      "url": "http://127.0.0.1:8888/index.php?page=master",
+      "title": "Netgear",
+      "timestamp": 1750951774.312665,
+      "page_hash": "0d7079747f897237ed45f482a80b6ab6",
+      "forms": [
+        {
+          "index": 0,
+          "action": "http://127.0.0.1:8888/index.php?page=master",
+          "method": "post",
+          "fields": [
+            {
+              "type": "hidden",
+              "name": "",
+              "id": "loading",
+              "value": "true",
+              "required": false,
+              "readonly": false,
+              "disabled": false,
+              "maxlength": "",
+              "pattern": "",
+              "placeholder": ""
+            },
+            {
+              "type": "hidden",
+              "name": "menu1",
+              "id": "menu1",
+              "value": "Configuration",
+              "required": false,
+              "readonly": false,
+              "disabled": false,
+              "maxlength": "",
+              "pattern": "",
+              "placeholder": ""
+            },
+            {
+              "type": "hidden",
+              "name": "menu2",
+              "id": "menu2",
+              "value": "System",
+              "required": false,
+              "readonly": false,
+              "disabled": false,
+              "maxlength": "",
+              "pattern": "",
+              "placeholder": ""
+            },
+            {
+              "type": "hidden",
+              "name": "menu3",
+              "id": "menu3",
+              "value": "General",
+              "required": false,
+              "readonly": false,
+              "disabled": false,
+              "maxlength": "",
+              "pattern": "",
+              "placeholder": ""
+            },
+            {
+              "type": "hidden",
+              "name": "menu4",
+              "id": "menu4",
+              "value": "General",
+              "required": false,
+              "readonly": false,
+              "disabled": false,
+              "maxlength": "",
+              "pattern": "",
+              "placeholder": ""
+            },
+            {
+              "type": "hidden",
+              "name": "mode7",
+              "id": "mode7",
+              "value": "",
+              "required": false,
+              "readonly": false,
+              "disabled": false,
+              "maxlength": "",
+              "pattern": "",
+              "placeholder": ""
+            },
+            {
+              "type": "hidden",
+              "name": "mode8",
+              "id": "mode8",
+              "value": "",
+              "required": false,
+              "readonly": false,
+              "disabled": false,
+              "maxlength": "",
+              "pattern": "",
+              "placeholder": ""
+            },
+            {
+              "type": "hidden",
+              "name": "mode9",
+              "id": "mode9",
+              "value": "",
+              "required": false,
+              "readonly": false,
+              "disabled": false,
+              "maxlength": "",
+              "pattern": "",
+              "placeholder": ""
+            },
+            {
+              "type": "hidden",
+              "name": "Action",
+              "id": "Action",
+              "value": "",
+              "required": false,
+              "readonly": false,
+              "disabled": false,
+              "maxlength": "",
+              "pattern": "",
+              "placeholder": ""
+            },
+            {
+              "type": "hidden",
+              "name": "",
+              "id": "logout",
+              "value": "",
+              "required": false,
+              "readonly": false,
+              "disabled": false,
+              "maxlength": "",
+              "pattern": "",
+              "placeholder": ""
+            },
+            {
+              "type": "hidden",
+              "name": "",
+              "id": "helpURL",
+              "value": "General",
+              "required": false,
+              "readonly": false,
+              "disabled": false,
+              "maxlength": "",
+              "pattern": "",
+              "placeholder": ""
+            },
+            {
+              "type": "radio",
+              "name": "system['basicSettings']['cloudStatus']",
+              "id": "enableMode",
+              "value": "1",
+              "required": false,
+              "readonly": false,
+              "disabled": false,
+              "maxlength": "",
+              "pattern": "",
+              "placeholder": ""
+            },
+            {
+              "type": "radio",
+              "name": "system['basicSettings']['cloudStatus']",
+              "id": "enableMode",
+              "value": "0",
+              "required": false,
+              "readonly": false,
+              "disabled": false,
+              "maxlength": "",
+              "pattern": "",
+              "placeholder": ""
+            },
+            {
+              "type": "hidden",
+              "name": "enableMode1",
+              "id": "enableMode1",
+              "value": "1",
+              "required": false,
+              "readonly": false,
+              "disabled": false,
+              "maxlength": "",
+              "pattern": "",
+              "placeholder": ""
+            },
+            {
+              "type": "hidden",
+              "name": "hidden_cloudStatus",
+              "id": "hidden_cloudStatus",
+              "value": "",
+              "required": false,
+              "readonly": false,
+              "disabled": false,
+              "maxlength": "",
+              "pattern": "",
+              "placeholder": ""
+            },
+            {
+              "type": "hidden",
+              "name": "hiddenAP_StandaloneMode",
+              "id": "hiddenAP_StandaloneMode",
+              "value": "",
+              "required": false,
+              "readonly": false,
+              "disabled": false,
+              "maxlength": "",
+              "pattern": "",
+              "placeholder": ""
+            },
+            {
+              "type": "hidden",
+              "name": "serno",
+              "id": "serno",
+              "value": "���������������������������������������������������������������������������������������������������������8(*���",
+              "required": false,
+              "readonly": false,
+              "disabled": false,
+              "maxlength": "",
+              "pattern": "",
+              "placeholder": ""
+            },
+            {
+              "type": "text",
+              "name": "system['basicSettings']['cloudConnectivityStatus']",
+              "id": "enableCloud",
+              "value": "Pending",
+              "required": false,
+              "readonly": false,
+              "disabled": true,
+              "maxlength": "",
+              "pattern": "",
+              "placeholder": ""
+            },
+            {
+              "type": "text",
+              "name": "connStatus",
+              "id": "connStatus",
+              "value": "Disconnected",
+              "required": false,
+              "readonly": false,
+              "disabled": true,
+              "maxlength": "",
+              "pattern": "",
+              "placeholder": ""
+            },
+            {
+              "type": "textarea",
+              "name": "activewin",
+              "id": "activewin",
+              "value": "NOTE: If Business Central Enabled is set to Yes, this Access Point will periodically attempt to contact NETGEAR Business Central Wireless Server to check if this Access Point has been registered for Business Central management.",
+              "required": false,
+              "readonly": true,
+              "disabled": false,
+              "maxlength": "",
+              "pattern": "",
+              "placeholder": ""
+            }
+          ],
+          "csrf_tokens": []
+        }
+      ],
+      "links": [
+        "javascript: void(0);",
+        "https://bc.netgear.com/",
+        "javascript: void(0);",
+        "http://127.0.0.1:8888/index.php?page=master",
+        "/productregistration/fsock.php",
+        "/productregistration/Prod_Reg_SerialCheck.php"
+      ],
+      "inputs": [
+        {
+          "index": 0,
+          "tag": "input",
+          "type": "hidden",
+          "name": "",
+          "id": "loading",
+          "value": "true",
+          "xpath": "//*[@id=\"loading\"]",
+          "css_selector": "#loading",
+          "fuzzing_priority": 5
+        },
+        {
+          "index": 1,
+          "tag": "input",
+          "type": "hidden",
+          "name": "menu1",
+          "id": "menu1",
+          "value": "Configuration",
+          "xpath": "//*[@id=\"menu1\"]",
+          "css_selector": "#menu1",
+          "fuzzing_priority": 5
+        },
+        {
+          "index": 2,
+          "tag": "input",
+          "type": "hidden",
+          "name": "menu2",
+          "id": "menu2",
+          "value": "System",
+          "xpath": "//*[@id=\"menu2\"]",
+          "css_selector": "#menu2",
+          "fuzzing_priority": 5
+        },
+        {
+          "index": 3,
+          "tag": "input",
+          "type": "hidden",
+          "name": "menu3",
+          "id": "menu3",
+          "value": "General",
+          "xpath": "//*[@id=\"menu3\"]",
+          "css_selector": "#menu3",
+          "fuzzing_priority": 5
+        },
+        {
+          "index": 4,
+          "tag": "input",
+          "type": "hidden",
+          "name": "menu4",
+          "id": "menu4",
+          "value": "General",
+          "xpath": "//*[@id=\"menu4\"]",
+          "css_selector": "#menu4",
+          "fuzzing_priority": 5
+        },
+        {
+          "index": 5,
+          "tag": "input",
+          "type": "hidden",
+          "name": "mode7",
+          "id": "mode7",
+          "value": "",
+          "xpath": "//*[@id=\"mode7\"]",
+          "css_selector": "#mode7",
+          "fuzzing_priority": 5
+        },
+        {
+          "index": 6,
+          "tag": "input",
+          "type": "hidden",
+          "name": "mode8",
+          "id": "mode8",
+          "value": "",
+          "xpath": "//*[@id=\"mode8\"]",
+          "css_selector": "#mode8",
+          "fuzzing_priority": 5
+        },
+        {
+          "index": 7,
+          "tag": "input",
+          "type": "hidden",
+          "name": "mode9",
+          "id": "mode9",
+          "value": "",
+          "xpath": "//*[@id=\"mode9\"]",
+          "css_selector": "#mode9",
+          "fuzzing_priority": 5
+        },
+        {
+          "index": 8,
+          "tag": "input",
+          "type": "hidden",
+          "name": "Action",
+          "id": "Action",
+          "value": "",
+          "xpath": "//*[@id=\"Action\"]",
+          "css_selector": "#Action",
+          "fuzzing_priority": 5
+        },
+        {
+          "index": 9,
+          "tag": "input",
+          "type": "hidden",
+          "name": "",
+          "id": "logout",
+          "value": "",
+          "xpath": "//*[@id=\"logout\"]",
+          "css_selector": "#logout",
+          "fuzzing_priority": 5
+        },
+        {
+          "index": 10,
+          "tag": "input",
+          "type": "hidden",
+          "name": "",
+          "id": "helpURL",
+          "value": "General",
+          "xpath": "//*[@id=\"helpURL\"]",
+          "css_selector": "#helpURL",
+          "fuzzing_priority": 5
+        },
+        {
+          "index": 11,
+          "tag": "input",
+          "type": "radio",
+          "name": "system['basicSettings']['cloudStatus']",
+          "id": "enableMode",
+          "value": "1",
+          "xpath": "//*[@id=\"enableMode\"]",
+          "css_selector": "#enableMode",
+          "fuzzing_priority": 0
+        },
+        {
+          "index": 12,
+          "tag": "input",
+          "type": "radio",
+          "name": "system['basicSettings']['cloudStatus']",
+          "id": "enableMode",
+          "value": "0",
+          "xpath": "//*[@id=\"enableMode\"]",
+          "css_selector": "#enableMode",
+          "fuzzing_priority": 0
+        },
+        {
+          "index": 13,
+          "tag": "input",
+          "type": "hidden",
+          "name": "enableMode1",
+          "id": "enableMode1",
+          "value": "1",
+          "xpath": "//*[@id=\"enableMode1\"]",
+          "css_selector": "#enableMode1",
+          "fuzzing_priority": 5
+        },
+        {
+          "index": 14,
+          "tag": "input",
+          "type": "hidden",
+          "name": "hidden_cloudStatus",
+          "id": "hidden_cloudStatus",
+          "value": "",
+          "xpath": "//*[@id=\"hidden_cloudStatus\"]",
+          "css_selector": "#hidden_cloudStatus",
+          "fuzzing_priority": 5
+        },
+        {
+          "index": 15,
+          "tag": "input",
+          "type": "hidden",
+          "name": "hiddenAP_StandaloneMode",
+          "id": "hiddenAP_StandaloneMode",
+          "value": "",
+          "xpath": "//*[@id=\"hiddenAP_StandaloneMode\"]",
+          "css_selector": "#hiddenAP_StandaloneMode",
+          "fuzzing_priority": 5
+        },
+        {
+          "index": 16,
+          "tag": "input",
+          "type": "hidden",
+          "name": "serno",
+          "id": "serno",
+          "value": "���������������������������������������������������������������������������������������������������������8(*���",
+          "xpath": "//*[@id=\"serno\"]",
+          "css_selector": "#serno",
+          "fuzzing_priority": 5
+        },
+        {
+          "index": 17,
+          "tag": "input",
+          "type": "text",
+          "name": "system['basicSettings']['cloudConnectivityStatus']",
+          "id": "enableCloud",
+          "value": "Pending",
+          "xpath": "//*[@id=\"enableCloud\"]",
+          "css_selector": "#enableCloud",
+          "fuzzing_priority": 10
+        },
+        {
+          "index": 18,
+          "tag": "input",
+          "type": "text",
+          "name": "connStatus",
+          "id": "connStatus",
+          "value": "Disconnected",
+          "xpath": "//*[@id=\"connStatus\"]",
+          "css_selector": "#connStatus",
+          "fuzzing_priority": 10
+        },
+        {
+          "index": 19,
+          "tag": "textarea",
+          "type": "textarea",
+          "name": "activewin",
+          "id": "activewin",
+          "value": "NOTE: If Business Central Enabled is set to Yes, this Access Point will periodically attempt to contact NETGEAR Business Central Wireless Server to check if this Access Point has been registered for Business Central management.",
+          "xpath": "//*[@id=\"activewin\"]",
+          "css_selector": "#activewin",
+          "fuzzing_priority": 0
+        }
+      ],
+      "frames": [],
+      "cookies": [
+        {
+          "domain": "127.0.0.1",
+          "httpOnly": true,
+          "name": "PHPSESSID",
+          "path": "/",
+          "sameSite": "Lax",
+          "secure": true,
+          "value": "44cf6f2104c6975bd81ddf14c2abcdf5"
+        }
+      ],
+      "local_storage": {
+        "clear": {},
+        "getItem": {},
+        "key": {},
+        "length": 0,
+        "removeItem": {},
+        "setItem": {}
+      },
+      "session_storage": {
+        "clear": {},
+        "getItem": {},
+        "key": {},
+        "length": 0,
+        "removeItem": {},
+        "setItem": {}
+      },
+      "javascript_vars": {
+        "location": "http://127.0.0.1:8888/index.php?page=master",
+        "title": "Netgear",
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/137.0.0.0 Safari/537.36"
+      },
+      "dom_structure_hash": "e74574babd8017c4ed93bd7ad18ec5c0",
+      "security_tokens": []
+    },
+    {
+      "url": "http://127.0.0.1:8888/productregistration/fsock.php",
+      "title": "",
+      "timestamp": 1750951777.4801762,
+      "page_hash": "98b1bc761d7c18be9ba2fd00972fad01",
+      "forms": [],
+      "links": [],
+      "inputs": [],
+      "frames": [],
+      "cookies": [
+        {
+          "domain": "127.0.0.1",
+          "httpOnly": true,
+          "name": "PHPSESSID",
+          "path": "/",
+          "sameSite": "Lax",
+          "secure": true,
+          "value": "44cf6f2104c6975bd81ddf14c2abcdf5"
+        }
+      ],
+      "local_storage": {
+        "clear": {},
+        "getItem": {},
+        "key": {},
+        "length": 0,
+        "removeItem": {},
+        "setItem": {}
+      },
+      "session_storage": {
+        "clear": {},
+        "getItem": {},
+        "key": {},
+        "length": 0,
+        "removeItem": {},
+        "setItem": {}
+      },
+      "javascript_vars": {
+        "location": "http://127.0.0.1:8888/productregistration/fsock.php",
+        "title": "",
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/137.0.0.0 Safari/537.36"
+      },
+      "dom_structure_hash": "d66f4fb0894adf815c8154ec6204c8e5",
+      "security_tokens": []
+    }
+  ],
+  "fuzzing_targets": [
+    {
+      "endpoint": "http://127.0.0.1:8888/index.php?page=master",
+      "method": "post",
+      "parameters": [
+        {
+          "type": "hidden",
+          "name": "",
+          "id": "loading",
+          "value": "true",
+          "required": false,
+          "readonly": false,
+          "disabled": false,
+          "maxlength": "",
+          "pattern": "",
+          "placeholder": ""
+        },
+        {
+          "type": "hidden",
+          "name": "menu1",
+          "id": "menu1",
+          "value": "Configuration",
+          "required": false,
+          "readonly": false,
+          "disabled": false,
+          "maxlength": "",
+          "pattern": "",
+          "placeholder": ""
+        },
+        {
+          "type": "hidden",
+          "name": "menu2",
+          "id": "menu2",
+          "value": "System",
+          "required": false,
+          "readonly": false,
+          "disabled": false,
+          "maxlength": "",
+          "pattern": "",
+          "placeholder": ""
+        },
+        {
+          "type": "hidden",
+          "name": "menu3",
+          "id": "menu3",
+          "value": "General",
+          "required": false,
+          "readonly": false,
+          "disabled": false,
+          "maxlength": "",
+          "pattern": "",
+          "placeholder": ""
+        },
+        {
+          "type": "hidden",
+          "name": "menu4",
+          "id": "menu4",
+          "value": "General",
+          "required": false,
+          "readonly": false,
+          "disabled": false,
+          "maxlength": "",
+          "pattern": "",
+          "placeholder": ""
+        },
+        {
+          "type": "hidden",
+          "name": "mode7",
+          "id": "mode7",
+          "value": "",
+          "required": false,
+          "readonly": false,
+          "disabled": false,
+          "maxlength": "",
+          "pattern": "",
+          "placeholder": ""
+        },
+        {
+          "type": "hidden",
+          "name": "mode8",
+          "id": "mode8",
+          "value": "",
+          "required": false,
+          "readonly": false,
+          "disabled": false,
+          "maxlength": "",
+          "pattern": "",
+          "placeholder": ""
+        },
+        {
+          "type": "hidden",
+          "name": "mode9",
+          "id": "mode9",
+          "value": "",
+          "required": false,
+          "readonly": false,
+          "disabled": false,
+          "maxlength": "",
+          "pattern": "",
+          "placeholder": ""
+        },
+        {
+          "type": "hidden",
+          "name": "Action",
+          "id": "Action",
+          "value": "",
+          "required": false,
+          "readonly": false,
+          "disabled": false,
+          "maxlength": "",
+          "pattern": "",
+          "placeholder": ""
+        },
+        {
+          "type": "hidden",
+          "name": "",
+          "id": "logout",
+          "value": "",
+          "required": false,
+          "readonly": false,
+          "disabled": false,
+          "maxlength": "",
+          "pattern": "",
+          "placeholder": ""
+        },
+        {
+          "type": "hidden",
+          "name": "",
+          "id": "helpURL",
+          "value": "General",
+          "required": false,
+          "readonly": false,
+          "disabled": false,
+          "maxlength": "",
+          "pattern": "",
+          "placeholder": ""
+        },
+        {
+          "type": "radio",
+          "name": "system['basicSettings']['cloudStatus']",
+          "id": "enableMode",
+          "value": "1",
+          "required": false,
+          "readonly": false,
+          "disabled": false,
+          "maxlength": "",
+          "pattern": "",
+          "placeholder": ""
+        },
+        {
+          "type": "radio",
+          "name": "system['basicSettings']['cloudStatus']",
+          "id": "enableMode",
+          "value": "0",
+          "required": false,
+          "readonly": false,
+          "disabled": false,
+          "maxlength": "",
+          "pattern": "",
+          "placeholder": ""
+        },
+        {
+          "type": "hidden",
+          "name": "enableMode1",
+          "id": "enableMode1",
+          "value": "1",
+          "required": false,
+          "readonly": false,
+          "disabled": false,
+          "maxlength": "",
+          "pattern": "",
+          "placeholder": ""
+        },
+        {
+          "type": "hidden",
+          "name": "hidden_cloudStatus",
+          "id": "hidden_cloudStatus",
+          "value": "",
+          "required": false,
+          "readonly": false,
+          "disabled": false,
+          "maxlength": "",
+          "pattern": "",
+          "placeholder": ""
+        },
+        {
+          "type": "hidden",
+          "name": "hiddenAP_StandaloneMode",
+          "id": "hiddenAP_StandaloneMode",
+          "value": "",
+          "required": false,
+          "readonly": false,
+          "disabled": false,
+          "maxlength": "",
+          "pattern": "",
+          "placeholder": ""
+        },
+        {
+          "type": "hidden",
+          "name": "serno",
+          "id": "serno",
+          "value": "���������������������������������������������������������������������������������������������������������8(*���",
+          "required": false,
+          "readonly": false,
+          "disabled": false,
+          "maxlength": "",
+          "pattern": "",
+          "placeholder": ""
+        },
+        {
+          "type": "text",
+          "name": "system['basicSettings']['cloudConnectivityStatus']",
+          "id": "enableCloud",
+          "value": "Pending",
+          "required": false,
+          "readonly": false,
+          "disabled": true,
+          "maxlength": "",
+          "pattern": "",
+          "placeholder": ""
+        },
+        {
+          "type": "text",
+          "name": "connStatus",
+          "id": "connStatus",
+          "value": "Disconnected",
+          "required": false,
+          "readonly": false,
+          "disabled": true,
+          "maxlength": "",
+          "pattern": "",
+          "placeholder": ""
+        },
+        {
+          "type": "textarea",
+          "name": "activewin",
+          "id": "activewin",
+          "value": "NOTE: If Business Central Enabled is set to Yes, this Access Point will periodically attempt to contact NETGEAR Business Central Wireless Server to check if this Access Point has been registered for Business Central management.",
+          "required": false,
+          "readonly": true,
+          "disabled": false,
+          "maxlength": "",
+          "pattern": "",
+          "placeholder": ""
+        }
+      ],
+      "csrf_tokens": [],
+      "authentication_required": true,
+      "session_dependent": false,
+      "priority_score": 55,
+      "vulnerability_indicators": [
+        "missing_csrf_token",
+        "potential_sql_injection",
+        "potential_xss"
+      ]
+    },
+    {
+      "endpoint": "http://127.0.0.1:8888/header.php",
+      "method": "post",
+      "parameters": [
+        {
+          "type": "hidden",
+          "name": "menu1",
+          "id": "menu1",
+          "value": "Configuration",
+          "required": false,
+          "readonly": false,
+          "disabled": false,
+          "maxlength": "",
+          "pattern": "",
+          "placeholder": ""
+        },
+        {
+          "type": "hidden",
+          "name": "menu2",
+          "id": "menu2",
+          "value": "System",
+          "required": false,
+          "readonly": false,
+          "disabled": false,
+          "maxlength": "",
+          "pattern": "",
+          "placeholder": ""
+        },
+        {
+          "type": "hidden",
+          "name": "menu3",
+          "id": "menu3",
+          "value": "Basic",
+          "required": false,
+          "readonly": false,
+          "disabled": false,
+          "maxlength": "",
+          "pattern": "",
+          "placeholder": ""
+        },
+        {
+          "type": "hidden",
+          "name": "menu4",
+          "id": "menu4",
+          "value": "General",
+          "required": false,
+          "readonly": false,
+          "disabled": false,
+          "maxlength": "",
+          "pattern": "",
+          "placeholder": ""
+        },
+        {
+          "type": "hidden",
+          "name": "mode7",
+          "id": "mode7",
+          "value": "",
+          "required": false,
+          "readonly": false,
+          "disabled": false,
+          "maxlength": "",
+          "pattern": "",
+          "placeholder": ""
+        },
+        {
+          "type": "hidden",
+          "name": "mode8",
+          "id": "mode8",
+          "value": "",
+          "required": false,
+          "readonly": false,
+          "disabled": false,
+          "maxlength": "",
+          "pattern": "",
+          "placeholder": ""
+        },
+        {
+          "type": "hidden",
+          "name": "mode9",
+          "id": "mode9",
+          "value": "",
+          "required": false,
+          "readonly": false,
+          "disabled": false,
+          "maxlength": "",
+          "pattern": "",
+          "placeholder": ""
+        },
+        {
+          "type": "hidden",
+          "name": "",
+          "id": "logout",
+          "value": "",
+          "required": false,
+          "readonly": false,
+          "disabled": false,
+          "maxlength": "",
+          "pattern": "",
+          "placeholder": ""
+        }
+      ],
+      "csrf_tokens": [],
+      "authentication_required": true,
+      "session_dependent": false,
+      "priority_score": 31,
+      "vulnerability_indicators": [
+        "missing_csrf_token",
+        "potential_sql_injection"
+      ]
+    }
+  ],
+  "navigation_paths": [
+    [
+      "http://127.0.0.1:8888/index.php?page=master",
+      "http://127.0.0.1:8888/index.php?page=master",
+      "http://127.0.0.1:8888/productregistration/fsock.php"
+    ]
+  ],
+  "session_changes": [],
+  "statistics": {
+    "pages_discovered": 6,
+    "unique_urls": 5,
+    "total_forms": 2,
+    "total_inputs": 28,
+    "total_security_tokens": 0,
+    "high_priority_targets": 2,
+    "vulnerability_indicators": {
+      "missing_csrf_token": 2,
+      "potential_sql_injection": 2,
+      "potential_xss": 1
+    },
+    "pages_with_csrf": 0,
+    "average_page_complexity": 4.666666666666667
+  },
+  "recommendations": [
+    "CSRF protection missing in 2 forms. Prioritize CSRF testing.",
+    "SQL injection vectors detected. Include SQL injection payloads in fuzzing.",
+    "Less than 50% of pages have CSRF protection. Consider comprehensive CSRF testing."
+  ]
+}

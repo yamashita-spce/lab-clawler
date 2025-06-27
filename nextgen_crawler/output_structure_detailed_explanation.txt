@@ -1,0 +1,319 @@
+IoTクローラー出力構造詳細説明
+
+==============================================================================
+基本出力ディレクトリ構造
+==============================================================================
+
+iot_crawler_output/
+└── crawl_session_[timestamp]/     # 実行毎の固有ディレクトリ
+    ├── html/                      # HTMLファイル（必須・常に生成）
+    ├── frames/                    # フレーム別コンテンツ（条件付き）
+    ├── json/                      # 構造化結果（必須・常に生成）
+    ├── analysis/                  # セキュリティ分析（メインクローラーのみ）
+    ├── fuzzing/                   # Fuzzing準備データ（メインクローラーのみ）
+    ├── sessions/                  # セッション復元データ（メインクローラーのみ）
+    ├── logs/                      # 実行ログ（メインクローラーのみ）
+    └── screenshots/               # スクリーンショット（デフォルト無効）
+
+==============================================================================
+各ディレクトリの詳細内容と生成条件
+==============================================================================
+
+1. html/ ディレクトリ【必須・常に生成】
+---------------------------------
+生成条件: 全クローラーで必ず生成
+内容: 即座保存されたHTMLファイル
+
+**統合メインクローラーの場合:**
+- 000_127.0.0.1_8888.html              # 深度0のメインページ
+- 001_127.0.0.1_8888_header.php.html   # 深度1のフレームページ
+- http_127.0.0.1_8888.html             # OutputManager経由保存
+- http_127.0.0.1_8888_header.php.html  # OutputManager経由保存
+
+**可視化クローラーの場合:**
+- initial_page.html     # 初期アクセス時のHTML
+- post_login.html       # 認証完了後のHTML
+- current_page.html     # 最終状態のHTML
+- frame_page_0.html     # フレームページ1
+- frame_page_1.html     # フレームページ2
+- frame_page_2.html     # フレームページ3
+
+**Fuzzingクローラーの場合:**
+- 000_127.0.0.1_8888.html              # メインページ
+- 001_127.0.0.1_8888_header.php.html   # 発見されたページ
+- main_page.html                       # 追加保存
+
+2. frames/ ディレクトリ【条件付き生成】
+---------------------------------
+生成条件: メインクローラー実行時のみ
+内容: 個別フレームのHTMLコンテンツ
+
+実際の例:
+- http_127.0.0.1:8888_header_0.html     # headerフレーム
+- http_127.0.0.1:8888_thirdmenu_1.html  # thirdmenuフレーム
+- http_127.0.0.1:8888_master_2.html     # masterフレーム
+- http_127.0.0.1:8888_dummyright_3.html # dummyrightフレーム
+- http_127.0.0.1:8888_action_4.html     # actionフレーム
+
+ファイル名形式: [URL]_[フレーム名]_[インデックス].html
+
+3. json/ ディレクトリ【必須・常に生成】
+---------------------------------
+生成条件: 全クローラーで必ず生成
+内容: 構造化されたクロール結果
+
+**統合メインクローラー:**
+- crawl_results_[timestamp].json        # 包括的クロール結果
+
+**Fuzzingクローラー:**
+- fuzzing_crawl_results.json           # Fuzzing特化結果
+
+**可視化クローラー:**
+- visible_crawl_results_[timestamp].json # 可視化クロール結果
+
+4. analysis/ ディレクトリ【条件付き生成】
+----------------------------------
+生成条件: 統合メインクローラー実行時のみ
+内容: セキュリティ分析結果
+
+実際の例:
+- structure_analysis_[timestamp].json   # 構造分析結果
+
+内容例:
+```json
+{
+  "metadata": {
+    "analysis_type": "structure_analysis",
+    "target_url": "http://127.0.0.1:8888"
+  },
+  "analysis": {
+    "url_structures": [...],
+    "security_contexts": [...],
+    "fuzzing_preparation": {...}
+  }
+}
+```
+
+5. fuzzing/ ディレクトリ【条件付き生成】
+---------------------------------
+生成条件: 統合メインクローラー実行時のみ
+内容: Fuzzing準備データ
+
+実際の例:
+- fuzzing_data_[timestamp].json     # Fuzzing基礎データ
+- fuzzing_report_[timestamp].json   # Fuzzing準備レポート
+
+fuzzing_report_[timestamp].json の内容:
+```json
+{
+  "metadata": {
+    "report_type": "fuzzing_preparation"
+  },
+  "executive_summary": {
+    "total_pages_crawled": 2,
+    "total_forms_found": 3,
+    "fuzzing_readiness_score": 32
+  },
+  "attack_surface": {
+    "input_points_by_type": {...},
+    "vulnerability_distribution": {...}
+  },
+  "fuzzing_recommendations": {
+    "primary_targets": {...},
+    "fuzzing_strategies": [...]
+  }
+}
+```
+
+6. sessions/ ディレクトリ【条件付き生成】
+----------------------------------
+生成条件: 統合メインクローラー実行時のみ
+内容: セッション復元用完全データ
+
+実際の例:
+- [session-id]/session_[session-id].json
+
+session_[session-id].json の内容:
+```json
+{
+  "session_id": "da549704-fbbb-4cf9-a662-09d36f4b52bf",
+  "target_url": "http://127.0.0.1:8888",
+  "authentication_state": {
+    "is_authenticated": true,
+    "login_successful": true
+  },
+  "browser_state": {
+    "cookies": [...],
+    "local_storage": {...},
+    "session_storage": {...}
+  },
+  "crawl_state": {
+    "visited_urls": [...],
+    "discovered_pages": [...]
+  }
+}
+```
+
+7. logs/ ディレクトリ【条件付き生成】
+-------------------------------
+生成条件: 統合メインクローラー実行時のみ
+内容: 詳細実行ログ
+
+実際の例:
+- crawler_log_[timestamp].txt
+
+ログ内容例:
+```
+[INFO] Initializing IoT Crawler
+[INFO] WebDriver initialized successfully
+[INFO] Output directories created at: iot_crawler_output/crawl_session_1750965931
+[INFO] Created unique output directory: iot_crawler_output/crawl_session_1750965931
+[INFO] Creating new crawl session: da549704-fbbb-4cf9-a662-09d36f4b52bf
+[INFO] Crawler initialized with session ID: da549704-fbbb-4cf9-a662-09d36f4b52bf
+```
+
+8. screenshots/ ディレクトリ【デフォルト無効】
+---------------------------------------
+生成条件: save_screenshots=True設定時のみ
+デフォルト状態: False（無効）
+内容: ページスクリーンショット
+
+有効化方法:
+```bash
+# 環境変数で有効化
+export IOT_CRAWLER_SCREENSHOTS="true"
+
+# または引数で有効化
+python iot_crawler_cli.py crawl --screenshots --url http://127.0.0.1:8888
+```
+
+有効化時の内容例:
+- page_[timestamp]_[url_safe].png
+- frame_[frame_name]_[timestamp].png
+
+==============================================================================
+クローラー種類別出力パターン
+==============================================================================
+
+1. 統合メインクローラー（iot_crawler_cli.py）
+----------------------------------------
+生成ディレクトリ: 全て（screenshots除く）
+- html/         ✓ (深度付きファイル名 + OutputManager保存)
+- frames/       ✓ (個別フレームHTML)
+- json/         ✓ (crawl_results_[timestamp].json)
+- analysis/     ✓ (structure_analysis_[timestamp].json)
+- fuzzing/      ✓ (fuzzing_data + fuzzing_report)
+- sessions/     ✓ (session_[session-id].json)
+- logs/         ✓ (crawler_log_[timestamp].txt)
+- screenshots/  △ (設定で有効化時のみ)
+
+2. Fuzzingクローラー（fuzzing_page_crawler.py）
+--------------------------------------------
+生成ディレクトリ: 限定
+- html/         ✓ (深度付きファイル名 + main_page.html)
+- frames/       ✗ (生成されない)
+- json/         ✓ (fuzzing_crawl_results.json)
+- analysis/     ✗ (生成されない)
+- fuzzing/      ✗ (生成されない - 結果に内包)
+- sessions/     ✗ (生成されない)
+- logs/         ✗ (生成されない)
+- screenshots/  ✗ (対応していない)
+
+3. 可視化クローラー（visible_fuzzing_crawler.py）
+----------------------------------------------
+生成ディレクトリ: 限定
+- html/         ✓ (段階別HTML保存)
+- frames/       ✗ (生成されない)
+- json/         ✓ (visible_crawl_results_[timestamp].json)
+- analysis/     ✗ (生成されない)
+- fuzzing/      ✗ (生成されない)
+- sessions/     ✗ (生成されない)
+- logs/         ✗ (生成されない)
+- screenshots/  ✗ (対応していない)
+
+==============================================================================
+実際の出力例
+==============================================================================
+
+**統合メインクローラー実行後（crawl_session_1750965931）:**
+```
+crawl_session_1750965931/
+├── html/
+│   ├── 000_127.0.0.1_8888.html                    # 4KB
+│   ├── 001_127.0.0.1_8888_header.php.html         # 2KB
+│   ├── http_127.0.0.1_8888.html                   # 4KB
+│   └── http_127.0.0.1_8888_header.php.html        # 2KB
+├── frames/
+│   ├── http_127.0.0.1:8888_header_0.html          # 2KB
+│   ├── http_127.0.0.1:8888_thirdmenu_1.html       # 1KB
+│   ├── http_127.0.0.1:8888_master_2.html          # 3KB
+│   ├── http_127.0.0.1:8888_dummyright_3.html      # 500B
+│   └── http_127.0.0.1:8888_action_4.html          # 800B
+├── json/
+│   └── crawl_results_1750965988.json              # 8KB
+├── analysis/
+│   └── structure_analysis_1750965988.json         # 12KB
+├── fuzzing/
+│   ├── fuzzing_data_1750965988.json               # 15KB
+│   └── fuzzing_report_1750965988.json             # 6KB
+├── sessions/
+│   └── da549704-fbbb-4cf9-a662-09d36f4b52bf/
+│       └── session_da549704-fbbb-4cf9-a662-09d36f4b52bf.json  # 4KB
+├── logs/
+│   └── crawler_log_1750965988.txt                 # 2KB
+└── screenshots/                                    # 空（無効）
+```
+
+**可視化クローラー実行後（crawl_session_1750967858）:**
+```
+crawl_session_1750967858/
+├── html/
+│   ├── initial_page.html                          # 4KB
+│   ├── post_login.html                            # 4KB
+│   ├── current_page.html                          # 3KB
+│   ├── frame_page_0.html                          # 2KB
+│   ├── frame_page_1.html                          # 1KB
+│   └── frame_page_2.html                          # 500B
+└── json/
+    └── visible_crawl_results_1750967858.json      # 3KB
+```
+
+==============================================================================
+出力されない理由と解決方法
+==============================================================================
+
+1. screenshots/ が空の理由
+------------------------
+原因: save_screenshots=False（デフォルト）
+解決方法:
+```bash
+# 環境変数設定
+export IOT_CRAWLER_SCREENSHOTS="true"
+
+# またはCLI引数
+python iot_crawler_cli.py crawl --screenshots --url http://127.0.0.1:8888
+```
+
+2. analysis/, fuzzing/, sessions/, logs/ が出力されない理由
+-------------------------------------------------------
+原因: 可視化クローラーやFuzzingクローラーでは生成されない
+解決方法: 統合メインクローラーを使用
+```bash
+python iot_crawler_cli.py crawl --url http://127.0.0.1:8888 --user admin --pass password
+```
+
+3. frames/ が出力されない理由
+--------------------------
+原因: 統合メインクローラー以外では生成されない
+解決方法: 統合メインクローラーを使用
+
+==============================================================================
+結論
+==============================================================================
+
+出力ディレクトリ構造は実行するクローラーの種類によって異なります。
+完全な出力を得るには統合メインクローラー（iot_crawler_cli.py）を使用し、
+スクリーンショットが必要な場合は明示的に有効化する必要があります。
+
+各クローラーは特定の用途に最適化されており、不要な出力を省略することで
+効率性を高めています。

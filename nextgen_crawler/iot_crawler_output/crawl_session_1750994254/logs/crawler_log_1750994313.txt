@@ -1,0 +1,61 @@
+[INFO] Initializing IoT Crawler
+[INFO] WebDriver initialized successfully
+[INFO] Output directories created at: iot_crawler_output/crawl_session_1750994254
+[INFO] Created unique output directory: iot_crawler_output/crawl_session_1750994254
+[INFO] Creating new crawl session: cba62c60-1af1-4722-b75a-ab97d68d5675
+[INFO] Crawler initialized with session ID: cba62c60-1af1-4722-b75a-ab97d68d5675
+[INFO] Starting full crawl for: http://127.0.0.1:8888
+[INFO] Performing authentication
+[INFO] Starting authentication for http://127.0.0.1:8888
+[DEBUG] Trying authentication on main page
+[DEBUG] Login elements not found on main page
+[DEBUG] Trying authentication in frames
+[DEBUG] Switched to frame: master
+[DEBUG] Found username field: input[name="username"]
+[DEBUG] Found password field: input[name="password"]
+[DEBUG] Found submit button: input[type="image"]
+[DEBUG] Entering credentials
+[DEBUG] Clicking submit button
+[DEBUG] Success detected: username field disappeared in master frame
+[INFO] Authentication successful in frames
+[INFO] Authentication successful
+[DEBUG] Recorded action: authenticate on http://127.0.0.1:8888
+[DEBUG] Capturing authentication state
+[INFO] Authentication state captured successfully
+[INFO] Starting comprehensive crawl from: http://127.0.0.1:8888
+[INFO] Crawling page (depth 0): http://127.0.0.1:8888
+[DEBUG] Saved HTML immediately: iot_crawler_output/crawl_session_1750994254/html/000_127.0.0.1_8888.html
+[DEBUG] Crawling frames for: http://127.0.0.1:8888
+[DEBUG] Processing frame: header -> http://127.0.0.1:8888/header.php
+[DEBUG] Processing frame: thirdmenu -> http://127.0.0.1:8888/thirdMenu.html
+[DEBUG] Processing frame: master -> http://127.0.0.1:8888/
+[DEBUG] Processing frame: dummyright -> http://127.0.0.1:8888/background.html
+[DEBUG] Processing frame: action -> http://127.0.0.1:8888/button.html
+[INFO] Crawling page (depth 1): http://127.0.0.1:8888/header.php
+[DEBUG] Saved HTML immediately: iot_crawler_output/crawl_session_1750994254/html/001_127.0.0.1_8888_header.php.html
+[DEBUG] Crawling frames for: http://127.0.0.1:8888/header.php
+[DEBUG] Already visited: http://127.0.0.1:8888/header.php
+[DEBUG] Already visited: http://127.0.0.1:8888/header.php
+[INFO] Performing structure analysis
+[DEBUG] Analyzing structure for: http://127.0.0.1:8888
+[DEBUG] Analyzing structure for: http://127.0.0.1:8888/header.php
+[INFO] Structure analysis completed
+[INFO] Saving and finalizing results
+[INFO] Saving 2 pages
+[DEBUG] Saved HTML: iot_crawler_output/crawl_session_1750994254/html/http_127.0.0.1_8888.html
+[DEBUG] Saved HTML: iot_crawler_output/crawl_session_1750994254/html/http_127.0.0.1_8888_header.php.html
+[INFO] Saving 5 frames
+[DEBUG] Saved frame: iot_crawler_output/crawl_session_1750994254/frames/http_127.0.0.1:8888_header_0.html
+[DEBUG] Saved frame: iot_crawler_output/crawl_session_1750994254/frames/http_127.0.0.1:8888_thirdmenu_1.html
+[DEBUG] Saved frame: iot_crawler_output/crawl_session_1750994254/frames/http_127.0.0.1:8888_master_2.html
+[DEBUG] Saved frame: iot_crawler_output/crawl_session_1750994254/frames/http_127.0.0.1:8888_dummyright_3.html
+[DEBUG] Saved frame: iot_crawler_output/crawl_session_1750994254/frames/http_127.0.0.1:8888_action_4.html
+[INFO] Saving comprehensive crawl results
+[INFO] Crawl results saved: iot_crawler_output/crawl_session_1750994254/json/crawl_results_1750994313.json
+[INFO] Saving structure analysis
+[INFO] Structure analysis saved: iot_crawler_output/crawl_session_1750994254/analysis/structure_analysis_1750994313.json
+[INFO] Saving fuzzing preparation data
+[INFO] Fuzzing data saved: iot_crawler_output/crawl_session_1750994254/fuzzing/fuzzing_data_1750994313.json
+[INFO] Creating fuzzing report
+[INFO] Fuzzing report created: iot_crawler_output/crawl_session_1750994254/fuzzing/fuzzing_report_1750994313.json
+[INFO] Session data saved: iot_crawler_output/crawl_session_1750994254/sessions/cba62c60-1af1-4722-b75a-ab97d68d5675/session_cba62c60-1af1-4722-b75a-ab97d68d5675.json
